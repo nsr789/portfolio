@@ -1,0 +1,1877 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Satwik Nallamilli | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Data Science and AI Enthusiast Portfolio" />
+    <meta name="keywords" content="data science, machine learning, AI, portfolio" />
+    <meta name="author" content="Satwik Nallamilli" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="Satwik Nallamilli Portfolio"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- REPLACE THIS: Favicon - Add your favicon.ico file -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+    
+    <!-- Font Awesome for other icons in the page -->
+    <script src="https://kit.fontawesome.com/b4e46ee3a4.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* CSS Styles */
+        @font-face {
+            font-family: 'icomoon';
+            src: url("fonts/icomoon/icomoon.eot?srf3rx");
+            src: url("fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), 
+                 url("fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), 
+                 url("fonts/icomoon/icomoon.woff?srf3rx") format("woff"), 
+                 url("fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Base Styles */
+        body {
+            font-family: "Quicksand", Arial, sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.8;
+            color: rgba(0, 0, 0, 0.7);
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: #2c98f0;
+            transition: 0.5s;
+            text-decoration: none;
+        }
+
+        a:hover, a:active, a:focus {
+            color: #2c98f0;
+            outline: none;
+            text-decoration: none !important;
+        }
+
+        p, li {
+            text-align: justify;
+        }
+
+        p {
+            margin-bottom: 1.5em;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #000;
+            font-family: "Playfair Display", Georgia, serif;
+            font-weight: 400;
+            margin: 0 0 30px 0;
+        }
+
+        /* Layout Styles */
+        #colorlib-page {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #colorlib-aside {
+            padding: 2em 0 2em 0;
+            float: left;
+            width: 300px;
+            position: fixed;
+            overflow: hidden;
+            z-index: 1001;
+            background: #f2f3f7;
+            transition: 0.5s;
+            height: 100%;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        #colorlib-aside h1 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        #colorlib-aside .author-img {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        #colorlib-aside .position {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        #colorlib-main {
+            width: calc(100% - 300px);
+            float: right;
+            transition: 0.5s;
+        }
+
+        .container-wrap {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .colorlib-narrow-content {
+            padding: 0 2.5em;
+        }
+
+        /* Navigation Styles */
+        #colorlib-main-menu ul {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #colorlib-main-menu ul li {
+            margin: 0 0 5px 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #colorlib-main-menu ul li a {
+            color: rgba(0, 0, 0, 0.7);
+            text-decoration: none;
+            position: relative;
+            padding: 5px 0;
+            font-family: "Quicksand", Arial, sans-serif;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            display: block;
+        }
+
+        #colorlib-main-menu ul li a:hover {
+            color: #000;
+        }
+
+        #colorlib-main-menu ul li.active a {
+            color: #2c98f0;
+        }
+
+        .social_icon {
+            margin-bottom: 20px;
+        }
+        
+        .social_icon ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .social_icon ul li {
+            display: inline-block;
+            padding: 0 6px;
+        }
+
+        .social_icon ul li a {
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .social_icon ul li a:hover {
+            transform: translateY(-3px);
+            opacity: 0.8;
+        }
+
+        .social_icon img {
+            filter: grayscale(100%);
+            transition: 0.3s;
+            width: 25px;
+            height: 25px;
+        }
+
+        .social_icon img:hover {
+            filter: grayscale(0%);
+        }
+
+        /* Hero Section */
+        #colorlib-hero {
+            min-height: 600px;
+            background: #fff;
+            width: 100%;
+            float: left;
+            margin-bottom: 10em;
+            clear: both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 10;
+            width: 80%;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-text h1 {
+            color: white;
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .hero-text h2 {
+            color: white;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .rotating-text {
+            color: #2c98f0;
+            font-weight: bold;
+        }
+
+        .btn-download {
+            background: #2c98f0;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .btn-download:hover {
+            background: #1a7dd4;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Section Styles */
+        .colorlib-section {
+            padding: 4em 0;
+            clear: both;
+            width: 100%;
+            display: block;
+        }
+
+        .heading-meta {
+            margin-bottom: 15px;
+            display: block;
+            font-size: 10px;
+            text-transform: uppercase;
+            color: #999999;
+            font-weight: 500;
+            letter-spacing: 5px;
+        }
+
+        .colorlib-heading {
+            font-size: 18px;
+            margin-bottom: 4em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            line-height: 1.8;
+            position: relative;
+        }
+
+        /* Skills Section */
+        .skills-wrap {
+            margin-top: 30px;
+        }
+
+        .skill-category {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .skill-category h4 {
+            color: #2c98f0;
+            margin-bottom: 15px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #2c98f0;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        /* Timeline Styles */
+        .timeline-centered {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-centered:before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 4px;
+            background: #f2f3f7;
+            top: 20px;
+            bottom: 20px;
+            margin-left: 29px;
+        }
+
+        .timeline-entry {
+            position: relative;
+            margin-bottom: 50px;
+            clear: both;
+        }
+
+        .timeline-entry-inner {
+            position: relative;
+            margin-left: 85px;
+        }
+
+        .timeline-icon {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background: #2c98f0;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 0 0 5px #f2f3f7;
+            line-height: 40px;
+            float: left;
+            position: absolute;
+            left: -54px;
+            top: 0;
+            color: white;
+        }
+
+        .timeline-label {
+            margin-left: 20px;
+        }
+
+        .timeline-label h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .timeline-label p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .timeline-label span {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .timeline-label ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .timeline-label ul li {
+            margin-bottom: 10px;
+            list-style-type: disc;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Projects Section */
+        .project {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: relative;
+            height: 300px;
+            width: 100%;
+            display: block;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .project .desc {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(44, 152, 240, 0.9);
+            opacity: 0;
+            transition: 0.3s;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .project:hover .desc {
+            opacity: 1;
+        }
+
+        .project .desc h3 {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .project .desc p {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .project .desc .tech-stack {
+            color: white;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .project .desc .github-link {
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .project .desc .github-link:hover {
+            background: white;
+            color: #2c98f0;
+        }
+
+        /* Publications Section */
+        .publication-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #2c98f0;
+        }
+
+        .publication-item h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .publication-item .pub-meta {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .publication-item .pub-link {
+            color: #2c98f0;
+            font-size: 14px;
+            word-break: break-all;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info i {
+            color: #2c98f0;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #f2f3f7;
+            border-radius: 5px;
+            font-family: "Quicksand", Arial, sans-serif;
+        }
+
+        .btn-primary {
+            background: #2c98f0;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #1a7dd4;
+            transform: translateY(-2px);
+        }
+
+        /* Mobile Responsive */
+        .colorlib-nav-toggle {
+            position: fixed;
+            left: -5px;
+            top: 0px;
+            z-index: 9999;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            padding: 20px;
+            transition: 0.5s;
+        }
+
+        .colorlib-nav-toggle i {
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 2px;
+            color: #000;
+            background: #000;
+            transition: all .2s ease-out;
+        }
+
+        .colorlib-nav-toggle i::before,
+        .colorlib-nav-toggle i::after {
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: #000;
+            position: absolute;
+            left: 0;
+            transition: 0.2s;
+        }
+
+        .colorlib-nav-toggle i::before {
+            top: -7px;
+        }
+
+        .colorlib-nav-toggle i::after {
+            bottom: -7px;
+        }
+
+        .colorlib-nav-toggle.active i {
+            background: transparent;
+        }
+
+        .colorlib-nav-toggle.active i::before {
+            top: 0;
+            transform: rotateZ(45deg);
+        }
+
+        .colorlib-nav-toggle.active i::after {
+            bottom: 0;
+            transform: rotateZ(-45deg);
+        }
+
+        @media screen and (max-width: 768px) {
+            #colorlib-aside {
+                width: 300px;
+                transform: translateX(-300px);
+                padding: 2em 0;
+            }
+
+            #colorlib-main {
+                width: 100%;
+                padding: 0 1em;
+            }
+
+            .colorlib-nav-toggle {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            body.offcanvas #colorlib-aside {
+                transform: translateX(0);
+            }
+
+            body.offcanvas #colorlib-main,
+            body.offcanvas .colorlib-nav-toggle {
+                top: 0;
+                transform: translateX(300px);
+            }
+        }
+
+        /* Animations */
+        .animate-box {
+            opacity: 0;
+        }
+
+        .animate-box.animated {
+            opacity: 1;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translate3d(-50px, 0, 0);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .fadeInLeft {
+            animation-name: fadeInLeft;
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translate3d(50px, 0, 0);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .fadeInRight {
+            animation-name: fadeInRight;
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+    
+    /* Dark‑mode sidebar & timeline fixes */
+    [data-theme="dark"] #colorlib-aside{
+        background:var(--card);
+        box-shadow:0 4px 10px rgba(0,0,0,0.6);
+    }
+    [data-theme="dark"] #colorlib-aside .author-img{
+        box-shadow:0 0 0 4px var(--border);
+    }
+    [data-theme="dark"] .timeline-centered:before{
+        background:var(--border);
+    }
+    [data-theme="dark"] .timeline-icon{
+        box-shadow:0 0 0 5px var(--card);
+    }
+    [data-theme="dark"] .timeline-icon.icon-style{
+        box-shadow:none;
+    }
+    [data-theme="dark"] #colorlib-main-menu ul li a:hover{
+        color:var(--text);
+    }
+    [data-theme="dark"] .colorlib-nav-toggle i,
+    [data-theme="dark"] .colorlib-nav-toggle i::before,
+    [data-theme="dark"] .colorlib-nav-toggle i::after{
+        background:var(--text);
+    }
+
+
+/* --- Harmonize Font Sizes --- */
+.colorlib-heading{font-size:24px;font-weight:700;}
+.heading-meta{font-size:12px;}
+.timeline-label h2,
+.publication-item h4,
+.skill-category h4{font-size:18px;font-weight:600;}
+
+/* --- Publications & Skills Boxes Unified Colors --- */
+.publication-item{
+    background:var(--card) !important;
+    border:1px solid var(--border) !important;
+    border-left:4px solid var(--accent) !important;
+}
+.skill-category{
+    background:var(--card) !important;
+    border:1px solid var(--border) !important;
+}
+
+/* Ensure pub-meta text readable in both modes */
+.publication-item .pub-meta{color:var(--text);}
+
+</style>
+
+<!-- Custom Overrides -->
+<style id="custom-overrides">
+    :root{
+        --bg:#ffffff;
+        --text:#111827;
+        --accent:#2c98f0;
+        --card:#f9fafb;
+        --border:#e5e7eb;
+        --font-size-base:17px;
+    }
+    [data-theme="dark"]{
+        --bg:#0d1117;
+        --text:#c9d1d9;
+        --accent:#2c98f0;
+        --card:#161b22;
+        --border:#30363d;
+    }
+    body{
+        background:var(--bg);
+        color:var(--text);
+        font-size:var(--font-size-base);
+        transition:background .3s,color .3s;
+    }
+    .card, .colorlib-about, .colorlib-work, .colorlib-skills, .colorlib-education,
+    .colorlib-blog, .colorlib-project, .colorlib-contact{
+        background:var(--card);
+        border:1px solid var(--border);
+        box-shadow:0 4px 10px rgba(0,0,0,0.04);
+    }
+    a{color:var(--accent);}
+    a:hover,a:focus{color:var(--accent);}
+    /* Progress bar */
+    #scroll-progress{
+        position:fixed;
+        top:0;left:0;
+        width:100%;height:4px;
+        z-index:9999;
+        appearance:none;
+        border:none;
+    }
+    #scroll-progress::-webkit-progress-bar{background:transparent;}
+    #scroll-progress::-webkit-progress-value{
+        background:var(--accent);
+        transition:width .2s;
+    }
+    /* Theme toggle button */
+    #theme-toggle{
+        position:fixed;
+        bottom:24px;right:24px;
+        z-index:9999;
+        background:var(--card);
+        border:none;
+        border-radius:50%;
+        width:44px;height:44px;
+        box-shadow:0 2px 6px rgba(0,0,0,0.15);
+        display:flex;align-items:center;justify-content:center;
+        font-size:18px;cursor:pointer;
+    }
+    /* Logo sizes */
+    .org-logo{height:60px;width:auto;object-fit:contain;}
+    .timeline-icon{width:60px;height:60px;}
+    .timeline-icon img{width:100%;height:100%;object-fit:contain;border-radius:50%;}
+
+    /* Dark‑mode text consistency */
+    h1,h2,h3,h4,h5,h6,p,li,span,#colorlib-main-menu ul li a,.publication-item h4{
+        color:var(--text);
+    }
+    #colorlib-main-menu ul li.active a{color:var(--accent);}
+
+    /* Larger logos */
+    .org-logo{height:80px;width:auto;object-fit:contain;}
+    .timeline-icon{width:80px;height:80px;line-height:80px;}
+    .timeline-icon img{width:100%;height:100%;}
+    .timeline-centered:before{margin-left:39px;}
+    .timeline-entry-inner{margin-left:115px;}
+
+
+    /* Back‑to‑top button */
+    #back-to-top{position:fixed;bottom:80px;right:24px;display:none;background:var(--accent);color:#fff;border:none;width:44px;height:44px;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.15);cursor:pointer;font-size:18px;align-items:center;justify-content:center;z-index:9999;}
+    #back-to-top:hover{transform:translateY(-3px);}
+
+
+    /* ---- Adjusted logo/icon sizes to prevent overlap ---- */
+    .org-logo{
+        height:60px !important;
+        width:auto;
+        object-fit:contain;
+        transition:transform .3s ease,filter .3s ease;
+    }
+    .org-logo:hover{
+        transform:scale(1.05);
+        filter:drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    }
+    .timeline-icon{
+        width:60px !important;
+        height:60px !important;
+        line-height:60px !important;
+        left:-55px !important;
+    }
+    .timeline-entry-inner{
+        margin-left:125px !important;
+    }
+    /* Fix text readability in dark mode */
+    [data-theme="dark"] .pub-meta,
+    [data-theme="dark"] .timeline-label span,
+    [data-theme="dark"] .heading-meta{
+        color:#8b949e !important;
+    }
+
+
+/* Timeline label boxes for Experience, Education, Extra Curricular */
+.timeline-label{
+    background:var(--card);
+    border:1px solid var(--border);
+    padding:20px 25px;
+    border-radius:10px;
+}
+/* Transparent timeline circles (logos) */
+.timeline-icon:not(.icon-style){
+    background:transparent !important;
+    box-shadow:0 0 0 5px var(--border) !important;
+}
+/* Ensure logo images fit within transparent circle */
+.timeline-icon:not(.icon-style) img{
+    border-radius:50%;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+
+/* === 2025‑07‑03 updates === */
+
+/* 1. Larger sidebar profile picture */
+#colorlib-aside .author-img{
+    width:150px !important;
+    height:150px !important;
+    margin-bottom:25px !important;
+}
+
+/* 1b. Sidebar typography bump, still fits 300px */
+#colorlib-aside h1{font-size:24px !important;}
+#colorlib-aside .position{font-size:12px !important;}
+#colorlib-main-menu ul li a{font-size:12px !important;}
+
+/* 2. Hero banner fills full viewport */
+#colorlib-hero{
+    height:100vh !important;
+    min-height:100vh !important;
+    margin-bottom:0 !important;
+}
+
+/* 3. Contact form boxes match card style */
+.form-control{
+    background:var(--card) !important;
+    color:var(--text) !important;
+    border:1px solid var(--border) !important;
+}
+.form-control::placeholder{
+    color:var(--text);
+    opacity:0.6;
+}
+
+/* submit button left unchanged – already uses accent */
+
+/* 4. Ensure 'Drop me a message' container inherits card border */
+#colorlib-main .animate-box h3 + form,
+#colorlib-main .animate-box form{
+    background:var(--card);
+    border:1px solid var(--border);
+    padding:20px;
+    border-radius:10px;
+}
+
+/* 5. Consistent heading sizes inside sidebar & elsewhere */
+.colorlib-heading{font-size:24px;font-weight:700;}
+
+
+/* === 2025‑07‑03 Fixes 2 === */
+
+/* Contact form dimensions & uniformity */
+#colorlib-main [data-section="contact"] .form-group{
+    margin-bottom:15px;
+}
+#colorlib-main [data-section="contact"] .form-control{
+    width:100%;
+    min-height:48px;
+    resize:vertical;
+}
+
+/* Drop‑me‑a‑message container width auto responsive already wrapped; ensure symmetrical padding */
+#colorlib-main [data-section="contact"] form{
+    display:block;
+}
+
+/* Reduce large gaps between sections */
+.colorlib-section{
+    padding:3em 0;
+}
+.colorlib-heading{
+    margin-bottom:2em;
+}
+
+/* Rectangular about‑section logos without affecting timeline logos */
+[data-section="about"] .org-logo{
+    width:120px !important;
+    height:60px !important;
+    object-fit:contain !important;
+}
+
+/* Contact form card inherits card styles in dark mode already, ensure background on headings not off */
+[data-section="contact"] h3{
+    margin-bottom:20px;
+}
+
+/* Transparent timeline rings already handled */
+
+/* Sidebar nav hover active colors unchanged */
+
+/* Ensure nav click gives minimal offset so previous section not visible */
+
+
+/* === 2025‑07‑03 Fixes 3 === */
+
+/* Contact form wrapper & field consistency */
+[data-section="contact"] form{
+    width:100%;
+    box-sizing:border-box;
+    padding:20px !important;
+}
+[data-section="contact"] .form-control{
+    width:100%;
+    box-sizing:border-box;
+    min-height:48px;
+}
+[data-section="contact"] .form-group{
+    margin-bottom:18px;
+}
+
+/* Align timeline circles exactly on the vertical line */
+.timeline-centered:before{
+    margin-left:100px !important;
+}
+.timeline-entry-inner{
+    margin-left:125px !important; /* keep */
+}
+.timeline-icon{
+    left:-55px !important; /* center = 125 -55 +30 =100 -> matches line */
+    width:60px !important;
+    height:60px !important;
+    line-height:60px !important;
+    box-shadow:0 0 0 5px var(--border) !important;
+}
+
+/* Rectangular company logos sizing assurance */
+[data-section="about"] .org-logo{
+    width:140px !important;
+    height:60px !important;
+    object-fit:contain !important;
+}
+
+
+/* Bottom timeline empty circle alignment */
+.timeline-icon.color-none{
+    background:transparent !important;
+    box-shadow:0 0 0 5px var(--border) !important;
+    width:20px !important;
+    height:20px !important;
+    line-height:20px !important;
+    left:-35px !important; /* Align center with vertical line */
+    top:0;
+}
+
+
+/* --- Align bottom timeline end-circle exactly on the vertical line tip --- */
+.timeline-entry.begin .timeline-icon.color-none{
+    top:auto !important;
+    bottom:-10px !important;   /* positions center 10px below bottom edge accounting radius */
+    left:-35px !important;     /* keeps center on line */
+}
+
+
+/* --- Bottom timeline end-circle FINAL alignment --- */
+.timeline-entry.begin .timeline-icon.color-none{
+    width:20px !important;
+    height:20px !important;
+    line-height:20px !important;
+    left:-35px !important;   /* center align with vertical line */
+    top:auto !important;
+    bottom:-10px !important; /* place center at bottom of line */
+    box-shadow:0 0 0 5px var(--border) !important;
+    background:transparent !important;
+}
+
+</style>
+
+
+<style>
+/* === 2025‑07‑03 Fix 4 — timeline end‑circle alignment === */
+.timeline-centered:before{bottom:0!important;}              /* bar reaches full length */
+.timeline-entry-inner     {margin-left:125px!important;}    /* keep every entry aligned */
+
+.timeline-entry.begin .timeline-icon.color-none{
+    position:absolute;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    left:-35px!important;            /* perfectly centred on the bar */
+    bottom:-10px!important;
+    top:auto!important;
+    background:transparent!important;
+    box-shadow:0 0 0 5px var(--border)!important;
+}
+</style>
+
+<style>
+/* === 2025‑07‑03 Fix 5 — eliminate gap between bar and end circle === */
+.timeline-entry.begin{margin-bottom:0!important;}
+.timeline-centered:before{bottom:-60px!important;} /* extend bar just a bit past the final entry */
+</style>
+
+<style>
+/* === 2025‑07‑03 Fix 6 — precise bottom circle alignment w/out overlap === */
+.timeline-centered:before{
+    bottom:0 !important;            /* bar ends at container bottom */
+}
+.timeline-entry.begin{
+    margin-bottom:0 !important;     /* remove extra whitespace */
+}
+.timeline-entry.begin .timeline-icon.color-none{
+    width:40px !important;
+    height:40px !important;
+    line-height:40px !important;
+    left:-54px !important;          /* align centre with bar */
+    top:auto !important;
+    bottom:-40px !important;        /* circle top flush with bar bottom */
+    background:transparent !important;
+    box-shadow:0 0 0 5px var(--border) !important;
+}
+</style>
+
+<style>
+/* === 2025‑07‑03 Fix 7 — final bottom circle align === */
+.timeline-centered:before{
+    bottom:0 !important;          /* bar ends exactly at container bottom */
+}
+.timeline-entry.begin{
+    margin-bottom:0 !important;   /* no extra whitespace */
+}
+.timeline-entry.begin .timeline-icon.color-none{
+    width:60px !important;
+    height:60px !important;
+    line-height:60px !important;
+    left:-55px !important;        /* align on bar */
+    top:auto !important;
+    bottom:-30px !important;      /* top of circle flush with bar bottom (radius=30) */
+    background:transparent !important;
+    box-shadow:0 0 0 5px var(--border) !important;
+}
+</style>
+
+<style>
+/* === 2025‑07‑03 Fix 8 — final fine‑tune: make circle touch bar === */
+.timeline-entry.begin .timeline-icon.color-none{
+    bottom:-33px !important; /* Move up 3px (radius=30) so circle kisses bar */
+}
+</style>
+
+<style>
+/* === 2025‑07‑03 Fix 9 — UI polish per user === */
+/* 1. Unbold timeline dates, roles, programs */
+.timeline-label h2 span{
+    font-weight:400 !important;
+}
+/* 2. Harmonize Technical Skills colors */
+.skill-category{
+    background:var(--card) !important;
+    border:1px solid var(--border) !important;
+    color:var(--text) !important;
+}
+.skill-category h4{
+    color:var(--accent) !important;
+}
+.skill-tag{
+    background:var(--accent) !important;
+    color:var(--card) !important;
+}
+/* 3. Sidebar name & subtitle colors */
+#colorlib-aside h1 a{
+    color:var(--text) !important;
+}
+#colorlib-aside .position{
+    color:var(--accent) !important;
+    font-weight:500 !important;
+}
+</style>
+
+<style>
+/* === 2025‑07‑03 Fix 10 — technical skills sub‑heading color harmonized === */
+.skill-category h4{
+    color:var(--text) !important;        /* matches sub-heading color sitewide */
+}
+</style>
+</head>
+
+<body>
+<progress id="scroll-progress" max="100" value="0"></progress>
+<button id="theme-toggle" aria-label="Toggle dark mode">
+    <i class="fa-regular fa-moon"></i>
+</button>
+<button id="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+    <div id="colorlib-page">
+        <div class="container-wrap">
+            <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+            
+            <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+                <div class="text-center" style="padding: 0 20px;">
+                    <!-- REPLACE THIS: Small profile picture (120x120px circular) -->
+                    <div class="author-img" style="background-image: url(images/profile-dp.jpg);"></div>
+                    <h1 id="colorlib-logo"><a href="index.html">Satwik Nallamilli</a></h1>
+                    <span class="position">Data Science & AI Enthusiast</span>
+                    <p style="font-size: 11px; color: #999; margin-top: 8px;">Driven by curiosity and passion for solving real-world problems with ML & AI</p>
+                </div>
+                
+                <nav id="colorlib-main-menu" role="navigation" class="navbar" style="padding: 0 20px; margin-top: 10px;">
+                    <div id="navbar" class="collapse">
+                        <ul>
+                            <li class="active"><a href="#" data-nav-section="home">Home</a></li>
+                            <li><a href="#" data-nav-section="about">About</a></li>
+                            <li><a href="#" data-nav-section="skills">Skills</a></li>
+                            <li><a href="#" data-nav-section="experience">Experience</a></li>
+                            <li><a href="#" data-nav-section="education">Education</a></li>
+                            <li><a href="#" data-nav-section="projects">Projects</a></li>
+                            <li><a href="#" data-nav-section="publications">Publications</a></li>
+                            <li><a href="#" data-nav-section="extracurriculars">Extra Curriculars</a></li>
+                            <li><a href="#" data-nav-section="contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="social_icon" style="padding: 0 20px;">
+                    <ul>
+                        <!-- REPLACE THESE: Social media icon images (25x25px recommended) -->
+                        <li><a href="https://www.linkedin.com/in/satwik-nallamilli-358397218/" target="_blank">
+                            <img src="images/linkedin-icon.png" alt="LinkedIn">
+                        </a></li>
+                        <li><a href="https://github.com/<strong>SaiSatwikReddy</strong>07/" target="_blank">
+                            <img src="images/github-icon.png" alt="GitHub">
+                        </a></li>
+                        <li><a href="https://scholar.google.com/citations?user=t1YF5FoAAAAJ&hl=en" target="_blank">
+                            <img src="images/google-scholar-icon.png" alt="Google Scholar">
+                        </a></li>
+                        <li><a href="https://www.researchgate.net/profile/Sai-Satwik-Reddy-Nallamilli/" target="_blank">
+                            <img src="images/researchgate-icon.png" alt="ResearchGate">
+                        </a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div id="colorlib-main">
+                <!-- Home Section -->
+                <section id="colorlib-hero" class="js-fullheight" data-section="home">
+                    <!-- REPLACE THIS: Large hero background image -->
+                    <div class="hero-background" style="background-image: url(images/hero-background.jpg);"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1>Hi, I'm Satwik</h1>
+                            <h2>I'm <span class="rotating-text">a Data Scientist</span></h2>
+                            <!-- REPLACE THIS: Link to your resume PDF -->
+                            <a href="resume/satwik-resume.pdf" class="btn-download" download>Download My Resume</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section class="colorlib-section" data-section="about">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <div class="about-desc">
+                                            <span class="heading-meta">About Me</span>
+                                            <h2 class="colorlib-heading">Who Am I?</h2>
+                                            <p>Hi, I'm Satwik — a  data enthusiast driven by curiosity and a passion for solving real-world problems with machine learning  and AI . With around 1 year of industry experience  in data science and AI roles and over 2.5 years of research experience  exploring the interdisciplinary applications of AI across healthcare , energy , speech processing , and NLP , I thrive at the intersection of data , algorithms , and impact .</p>
+                                            
+                                            <p>I'm deeply committed to continuous learning , pushing the boundaries of what's possible, and contributing to projects that create meaningful change . My journey in data science began during my undergraduate studies at Amrita University, where I discovered the transformative power of AI through hands-on research projects and collaborations with esteemed professors. This foundation has shaped my approach to problem-solving: methodical, innovative, and always focused on real-world applications.</p>
+                                            
+                                            <p>Currently pursuing my Master's degree at UIUC, I'm expanding my expertise in advanced statistical methods and cutting-edge machine learning techniques. Whether it's building scalable data pipelines, developing predictive models, or exploring the latest in generative AI, I approach each challenge with enthusiasm and a commitment to excellence. </p>
+                                            
+                                            <p style="margin-top: 30px;"><strong>Contact me:</strong> satwikreddy987@gmail.com<br>
+                                            <strong>Current Location:</strong> Champaign, IL</p>
+                                            
+                                            <!-- Company Logos Section -->
+                                            <div style="margin-top: 40px; text-align: center;">
+                                                <h4 style="margin-bottom: 20px; color: #999; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">Organizations I've Worked With</h4>
+                                                <div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
+                                                    <!-- REPLACE THESE: Company logos (height: 40px) -->
+                                                    <img class="org-logo" src="images/volkswagen-rect.png" alt="Volkswagen" >
+                                                    <img class="org-logo" src="images/amrita-hospital-rect.png" alt="Amrita Hospital" >
+                                                    <img class="org-logo" src="images/amrita-university-rect.png" alt="Amrita University" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="colorlib-section" data-section="skills">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <span class="heading-meta">My Expertise</span>
+                                        <h2 class="colorlib-heading">Technical Skills</h2>
+                                    </div>
+                                </div>
+                                <div class="skills-wrap">
+                                    <div class="skill-category animate-box" data-animate-effect="fadeInRight">
+                                        <h4>Frameworks/Libraries</h4>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">NumPy</span>
+                                            <span class="skill-tag">Pandas</span>
+                                            <span class="skill-tag">Apache Spark (PySpark)</span>
+                                            <span class="skill-tag">Scikit-learn</span>
+                                            <span class="skill-tag">PyTorch</span>
+                                            <span class="skill-tag">Hugging Face</span>
+                                            <span class="skill-tag">TensorFlow</span>
+                                            <span class="skill-tag">LangChain</span>
+                                            <span class="skill-tag">CrewAI</span>
+                                            <span class="skill-tag">Chroma</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-category animate-box" data-animate-effect="fadeInLeft">
+                                        <h4>Specializations</h4>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Machine Learning</span>
+                                            <span class="skill-tag">Data Engineering</span>
+                                            <span class="skill-tag">Data Analysis</span>
+                                            <span class="skill-tag">Natural Language Processing</span>
+                                            <span class="skill-tag">Generative AI</span>
+                                            <span class="skill-tag">Big Data</span>
+                                            <span class="skill-tag">Agentic AI</span>
+                                            <span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-category animate-box" data-animate-effect="fadeInRight">
+                                        <h4>Programming Languages</h4>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Python (Advanced)</span>
+                                            <span class="skill-tag">SQL (Advanced)</span>
+                                            <span class="skill-tag">Java (Intermediate)</span>
+                                        </div>
+                                    </div>
+                                    <div class="skill-category animate-box" data-animate-effect="fadeInLeft">
+                                        <h4>Tools & Cloud</h4>
+                                        <div class="skill-tags">
+                                            <span class="skill-tag">Docker</span>
+                                            <span class="skill-tag">Git</span>
+                                            <span class="skill-tag">Jira</span>
+                                            <span class="skill-tag">Databricks</span>
+                                            <span class="skill-tag">Tableau</span>
+                                            <span class="skill-tag">AWS (S3, Kinesis, Glue, Athena, Lambda, EC2, QuickSight)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Section -->
+                <section class="colorlib-section" data-section="experience">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <span class="heading-meta">Experience</span>
+                                        <h2 class="colorlib-heading">Work Experience</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="timeline-centered">
+                                            <!-- Volkswagen -->
+                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon">
+                                                        <!-- REPLACE THIS: Volkswagen logo for timeline -->
+                                                        <img class="org-logo" src="images/volkswagen-logo.png" alt="Volkswagen">
+                                                    </div>
+                                                    <div class="timeline-label">
+                                                        <h2>Volkswagen Group<br><span>Data Science Intern<br>Sep 2024 – Feb 2025 | Pune, India</span></h2>
+                                                        <p><em>Python, SQL, PySpark, AWS, REST APIs, Postman</em></p>
+                                                        <ul>
+                                                            <li>Developed an end-to-end <strong>HR analytics solution</strong> on AWS to support workforce decision-making for <strong>70,000+ employees</strong>, integrating OAuth-secured data from <strong>SAP SuccessFactors</strong> and internal enterprise sources.</li>
+                                                            <li>Engineered a robust <strong>ELT pipeline</strong> using API-based data ingestion, <strong>AWS Glue with PySpark scripts</strong> for scalable and efficient data transformations, and <strong>Amazon S3</strong> for storage of raw and processed datasets.</li>
+                                                            <li>Accelerated data querying by <strong>30%</strong> with optimized <strong>Amazon Athena</strong> queries and partitioning strategies, and built a <strong>near real-time</strong>, interactive dashboard in <strong>Amazon QuickSight</strong> for HR analytics.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <!-- Amrita Hospital -->
+                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon">
+                                                        <!-- REPLACE THIS: Amrita Hospital logo for timeline -->
+                                                        <img class="org-logo" src="images/amrita-hospital-logo.png" alt="Amrita Hospital">
+                                                    </div>
+                                                    <div class="timeline-label">
+                                                        <h2>Amrita Hospital<br><span>AI Intern<br>Nov 2023 – Feb 2024 | Kochi, India</span></h2>
+                                                        <p><em>Python, PyTorch, NumPy, Pandas, Matplotlib, GANs</em></p>
+                                                        <ul>
+                                                            <li>Built and integrated a <strong>PyTorch-based image classifier</strong> into a healthcare web app, enabling automated diagnosis support using <strong>25,000+ clinical images</strong>.</li>
+                                                            <li>Designed and implemented a complete <strong>data preprocessing pipeline</strong>—including cleaning, normalization, resizing, and artifact removal—to prepare high-quality training data.</li>
+                                                            <li>Fine-tuned <strong>ResNet</strong>, <strong>EfficientNet</strong>, and <strong>Vision Transformer (ViT)</strong> on <strong>GAN-augmented datasets</strong>, boosting classification accuracy by <strong>20%</strong>.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <!-- Research Assistant -->
+                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon">
+                                                        <!-- REPLACE THIS: Amrita University logo for timeline -->
+                                                        <img class="org-logo" src="images/amrita-university-logo.png" alt="Amrita University">
+                                                    </div>
+                                                    <div class="timeline-label">
+                                                        <h2>Amrita School of Artificial Intelligence<br><span>Undergraduate Research Assistant<br>Jan 2022 – Aug 2024 | Coimbatore, India</span></h2>
+                                                        <ul>
+                                                            <li>Worked under the guidance of four senior faculty members: <strong>Dr. K.P. Soman, Dr. Sowmya V, Dr. Vinayakumar R</strong>, and <strong>Dr. Sachin Kumar S</strong> on interdisciplinary research projects across <strong>healthcare</strong>, <strong>speech processing</strong>, <strong>energy systems</strong>, and <strong>e-commerce</strong>.</li>
+                                                            <li>Handled diverse data types including <strong>images</strong>, <strong>audio</strong>, <strong>text</strong>, <strong>structured tabular (CSV)</strong>, and <strong>time-series data</strong>, adapting preprocessing pipelines accordingly.</li>
+                                                            <li>Gained hands-on experience in <strong>deep learning</strong>, <strong>machine learning</strong>, <strong>natural language processing</strong>, <strong>signal processing</strong>, <strong>time-series forecasting</strong>, <strong>generative AI</strong>, and <strong>statistical modeling</strong>.</li>
+                                                            <li>Contributed to the full ML lifecycle—data preprocessing, model development, evaluation, and implementation—with multiple projects leading to <strong>peer-reviewed publications</strong>.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon color-none"></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section class="colorlib-section" data-section="education">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <span class="heading-meta">Education</span>
+                                        <h2 class="colorlib-heading">Academic Background</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="timeline-centered">
+                                            <!-- UIUC -->
+                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon">
+                                                        <!-- REPLACE THIS: UIUC logo for timeline -->
+                                                        <img class="org-logo" src="images/uiuc-logo.png" alt="UIUC">
+                                                    </div>
+                                                    <div class="timeline-label">
+                                                        <h2>University of Illinois Urbana-Champaign<br><span>Master of Science - MS, Statistics (Data Science)<br>August 2025 - May 2027</span></h2>
+                                                        <p><strong>GPA: 4.0/4.0</strong></p>
+                                                        <p>I am currently pursuing my Master of Science in Statistics at the University of Illinois Urbana-Champaign, Illinois, USA. I am delving deeper into mathematical concepts to further strengthen my expertise in data science and artificial intelligence. Additionally, I am working on several exciting projects in data science and generative AI.</p>
+                                                        <p><strong>Relevant Coursework (In Progress):</strong><br>
+                                                        Statistics and Probability II, Statistical Modeling I, Advanced Data Analysis</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <!-- Amrita -->
+                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon">
+                                                        <!-- REPLACE THIS: Amrita University logo for timeline -->
+                                                        <img class="org-logo" src="images/amrita-university-logo.png" alt="Amrita">
+                                                    </div>
+                                                    <div class="timeline-label">
+                                                        <h2>Amrita Vishwa Vidyapeetham, Coimbatore<br><span>Bachelor of Technology - BTech, Computer Science and Engineering (Artificial Intelligence)<br>August 2021 - May 2025</span></h2>
+                                                        <p><strong>Grade: 8.46/10 (First Class with Distinction)</strong></p>
+                                                        <p>I completed my Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence from Amrita Vishwa Vidyapeetham, Coimbatore, India. During my undergraduate studies, I conducted research under the guidance of senior professors, applying AI to interdisciplinary domains such as healthcare, speech processing, energy systems, e-commerce, and natural language processing, resulting in several peer-reviewed, Scopus-indexed international publications. Beyond academics, I served as the lead of the Nature Club, organized multiple cultural fests, and conducted technical workshops for freshmen during college tech fests. I also pursued internships to broaden my technical skill set. My undergraduate journey was a challenging yet rewarding phase that taught me independence, adaptability, and self-sufficiency.</p>
+                                                        <p><strong>Relevant Coursework:</strong><br>
+                                                        <strong>1. Machine Learning & AI:</strong> Reinforcement Learning, Deep Learning for Signal & Image Processing, AI in Natural Language Processing, AI in Speech Processing<br>
+                                                        <strong>2. Data Science Foundations:</strong> Statistics & Probability, Linear Algebra, Optimization, Calculus<br>
+                                                        <strong>3. Data Engineering & Systems:</strong> Big Data Analytics, Big Data and Database Management, Cloud Computing, Database Management Systems<br>
+                                                        <strong>4. Computer Science Fundamentals:</strong> Data Structures & Algorithms, Computer Networks</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon color-none"></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section class="colorlib-section" data-section="projects">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <span class="heading-meta">My Work</span>
+                                        <h2 class="colorlib-heading">Projects</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- Project 1 -->
+                                    <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                                        <!-- REPLACE THIS: Project thumbnail image -->
+                                        <div class="project" style="background-image: url(images/project1-thumbnail.jpg);">
+                                            <div class="desc">
+                                                <h3>Sample Project 1</h3>
+                                                <p>Brief description of the project and its impact on solving real-world problems.</p>
+                                                <p class="tech-stack">Tech Stack: Python, PyTorch, AWS</p>
+                                                <a href="https://github.com/yourusername/project1" target="_blank" class="github-link">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Project 2 -->
+                                    <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                                        <!-- REPLACE THIS: Project thumbnail image -->
+                                        <div class="project" style="background-image: url(images/project2-thumbnail.jpg);">
+                                            <div class="desc">
+                                                <h3>Sample Project 2</h3>
+                                                <p>Brief description of the project and its impact on solving real-world problems.</p>
+                                                <p class="tech-stack">Tech Stack: React, Node.js, MongoDB</p>
+                                                <a href="https://github.com/yourusername/project2" target="_blank" class="github-link">View on GitHub</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Add more projects as needed -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Publications Section -->
+                <section class="colorlib-section" data-section="publications">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <span class="heading-meta">Research Work</span>
+                                        <h2 class="colorlib-heading">Publications</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!-- Publications in reverse chronological order -->
+                                        <div class="publication-item animate-box" data-animate-effect="fadeInRight">
+                                            <h4><a href="https://doi.org/10.1007/978-3-031-72636-1_11" target="_blank">Accurate Estimation of Cargo Power Using Machine Learning Algorithms</a></h4>
+                                            <p class="pub-meta">Venkata Siva Manoj, A., <strong>N. <strong>Sai Satwik Reddy</strong></strong>, V. Venkata Alluri Rohith, V. Sowmya, and Vinayakumar Ravi<br>
+                                            Analytics Modeling in Reliability and Machine Learning and Its Applications, pp. 213-236. Cham: Springer Nature Switzerland, 2025.<br>
+                                            <strong>Published:</strong> 21 January 2025</p>
+                                        </div>
+
+                                        <div class="publication-item animate-box" data-animate-effect="fadeInLeft">
+                                            <h4><a href="https://doi.org/10.1109/ICCCNT61001.2024.10725674" target="_blank">Transfer Learning-Based Emotion Recognition Using Augmented Speech Data</a></h4>
+                                            <p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, V. Venkata Alluri Rohith, V. Poorna Muni Sasidhar Reddy, and Y. Shashank Reddy<br>
+                                            2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT), pp. 1-7. IEEE, 2024.<br>
+                                            <strong>Published:</strong> 04 November 2024</p>
+                                        </div>
+
+                                        <div class="publication-item animate-box" data-animate-effect="fadeInRight">
+                                            <h4><a href="https://doi.org/10.1007/978-981-97-4149-6_35" target="_blank">Fast Iterative Filtering-Based Deep Belief Network for Accurate Short-term Electric Load Forecasting</a></h4>
+                                            <p class="pub-meta"><strong>Sai Satwik Reddy</strong>, N., A. Venkata Siva Manoj, Neethu Mohan, S. Sachin Kumar, and K. P. Soman<br>
+                                            International Conference On Innovative Computing And Communication, pp. 521-530. Singapore: Springer Nature Singapore, 2024.<br>
+                                            <strong>Published:</strong> 27 September 2024</p>
+                                        </div>
+
+                                        <div class="publication-item animate-box" data-animate-effect="fadeInLeft">
+                                            <h4><a href="https://doi.org/10.1109/ICICT60155.2024.10544665" target="_blank">Enhancing Product Categorization in E-commerce using NLP and Machine Learning</a></h4>
+                                            <p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, V. Venkata Alluri Rohith, P. Sai Abhiram, M. Devi Siva Rama Saran, and Samya Rebecca<br>
+                                            2024 International Conference on Inventive Computation Technologies (ICICT), pp. 1-6. IEEE, 2024.<br>
+                                            <strong>Published:</strong> 07 June 2024</p>
+                                        </div>
+
+                                        <div class="publication-item animate-box" data-animate-effect="fadeInRight">
+                                            <h4><a href="https://doi.org/10.1007/978-3-031-56703-2_18" target="_blank">Transfer Learning Approach for Differentiating Parkinson's Syndromes Using Voice Recordings</a></h4>
+                                            <p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, A. Venkata Siva Manoj, V. Poorna Muni Sasidhar Reddy, Aadharsh Aadhithya, and V. Sowmya<br>
+                                            International Advanced Computing Conference, pp. 213-226. Cham: Springer Nature Switzerland, 2023.<br>
+                                            <strong>Published:</strong> 26 March 2024</p>
+                                        </div>
+
+                                        <div class="publication-item animate-box" data-animate-effect="fadeInLeft">
+                                            <h4><a href="https://doi.org/10.1007/978-3-031-56703-2_32" target="_blank">Classification of Colorectal Cancer Tissue Utilizing Machine Learning Algorithms</a></h4>
+                                            <p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, A. Venkata Siva Manoj, and V. Sowmya<br>
+                                            International Advanced Computing Conference, pp. 397-409. Cham: Springer Nature Switzerland, 2023.<br>
+                                            <strong>Published:</strong> 26 March 2024</p>
+                                        </div>
+
+                                        <div class="publication-item animate-box" data-animate-effect="fadeInRight">
+                                            <h4><a href="https://doi.org/10.1109/CONIT59222.2023.10205633" target="_blank">A Fast Iterative Filtering Method for Efficient Denoising of Phonocardiogram Signals</a></h4>
+                                            <p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, V. Poorna Muni Saisdhar Reddy, Neethu Mohan, Sachin Kumar, and Soman KP<br>
+                                            2023 3rd International Conference on Intelligent Technologies (CONIT), pp. 1-6. IEEE, 2023.<br>
+                                            <strong>Published:</strong> 07 August 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Extra Curriculars Section -->
+                <section class="colorlib-section" data-section="extracurriculars">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <span class="heading-meta">Beyond Academics</span>
+                                        <h2 class="colorlib-heading">Extra Curricular Activities</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="timeline-centered">
+                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon icon-style" style="background: #2c98f0;">
+                                                        <i class="fa-solid fa-chalkboard-teacher" style="color: white;"></i>
+                                                    </div>
+                                                    <div class="timeline-label">
+                                                        <h2>Workshop on LLMs<br><span>October 2024</span></h2>
+                                                        <p>Organized a workshop on Large Language Models for freshmen at Anokha Tech Fest, Amrita University</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon icon-style" style="background: #ec5453;">
+                                                        <i class="fa-solid fa-lightbulb" style="color: white;"></i>
+                                                    </div>
+                                                    <div class="timeline-label">
+                                                        <h2>IEEE Idea-thon<br><span>April 2024</span></h2>
+                                                        <p>Conducted idea-thon as IEEE student member at Amrita University</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon icon-style" style="background: #f9bf3f;">
+                                                        <i class="fa-solid fa-tree" style="color: white;"></i>
+                                                    </div>
+                                                    <div class="timeline-label">
+                                                        <h2>Nature Club Lead<br><span>June 2022 – June 2024</span></h2>
+                                                        <p>Led sapling plantation event on World Environment Day for three consecutive years as the Lead of the Nature Club at Amrita University</p>
+                                                    </div>
+                                                </div>
+                                            </article>
+
+                                            <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                                <div class="timeline-entry-inner">
+                                                    <div class="timeline-icon color-none"></div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section class="colorlib-section" data-section="contact">
+                    <div class="colorlib-narrow-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                                    <div class="col-md-12">
+                                        <span class="heading-meta">Get in Touch</span>
+                                        <h2 class="colorlib-heading">Contact</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="contact-info animate-box" data-animate-effect="fadeInLeft">
+                                            <p><i class="fa-solid fa-envelope"></i> satwikreddy987@gmail.com</p>
+                                            <p><i class="fa-solid fa-map-marker-alt"></i> Champaign, IL</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="row">
+                                            <div class="col-md-12 animate-box" data-animate-effect="fadeInRight">
+                                                <h3>Drop me a message</h3>
+                                                <form action="mailto:satwikreddy987@gmail.com" method="post" enctype="text/plain">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="Subject" name="subject">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Rotating text animation
+        $(document).ready(function() {
+            const texts = ["a Data Scientist", "an ML Engineer", "a Data Engineer", "an AI Researcher", "a Data Analyst"];
+            let index = 0;
+            
+            function rotateText() {
+                $('.rotating-text').fadeOut(500, function() {
+                    $(this).text(texts[index]).fadeIn(500);
+                });
+                index = (index + 1) % texts.length;
+            }
+            
+            setInterval(rotateText, 3000);
+
+            // Navigation click
+            $('#navbar a:not([class="external"])').click(function(event){
+                event.preventDefault();
+                var section = $(this).data('nav-section');
+                
+                if ($('[data-section="' + section + '"]').length) {
+                    $('html, body').animate({
+                        scrollTop: $('[data-section="' + section + '"]').offset().top - 20
+                    }, 500);
+                }
+
+            // Navigation active state on scroll
+            var navigationSection = function() {
+                var $section = $('section[data-section]');
+                
+                $section.waypoint(function(direction) {
+                    if (direction === 'down') {
+                        navActive($(this.element).data('section'));
+                    }
+                }, {
+                    offset: '150px'
+                });
+
+                $section.waypoint(function(direction) {
+                    if (direction === 'up') {
+                        navActive($(this.element).data('section'));
+                    }
+                }, {
+                    offset: function() { return -$(this.element).height() + 155; }
+                });
+            };
+
+            var navActive = function(section) {
+                var $el = $('#navbar > ul');
+                $el.find('li').removeClass('active');
+                $el.find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
+            };
+
+            // Initialize navigation section tracking
+            navigationSection();
+            });
+
+            // Mobile menu toggle
+            $('.js-colorlib-nav-toggle').on('click', function(event){
+                event.preventDefault();
+                var $this = $(this);
+
+                if ($('body').hasClass('offcanvas')) {
+                    $this.removeClass('active');
+                    $('body').removeClass('offcanvas');	
+                } else {
+                    $this.addClass('active');
+                    $('body').addClass('offcanvas');	
+                }
+            });
+
+            // Close mobile menu when clicking outside
+            $(document).click(function(e) {
+                var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    if ($('body').hasClass('offcanvas')) {
+                        $('body').removeClass('offcanvas');
+                        $('.js-colorlib-nav-toggle').removeClass('active');
+                    }
+                }
+            });
+
+            // Animate on scroll
+            var contentWayPoint = function() {
+                $('.animate-box').waypoint(function(direction) {
+                    if(direction === 'down' && !$(this.element).hasClass('animated')) {
+                        $(this.element).addClass('item-animate');
+                        setTimeout(function() {
+                            $('body .animate-box.item-animate').each(function(k){
+                                var el = $(this);
+                                setTimeout(function() {
+                                    var effect = el.data('animate-effect');
+                                    if (effect === 'fadeIn') {
+                                        el.addClass('fadeIn animated');
+                                    } else if (effect === 'fadeInLeft') {
+                                        el.addClass('fadeInLeft animated');
+                                    } else if (effect === 'fadeInRight') {
+                                        el.addClass('fadeInRight animated');
+                                    } else {
+                                        el.addClass('fadeInUp animated');
+                                    }
+                                    el.removeClass('item-animate');
+                                }, k * 200, 'easeInOutExpo');
+                            });
+                        }, 100);
+                    }
+                }, { offset: '85%' });
+            };
+
+            // Initialize waypoints if available
+            if (typeof $.fn.waypoint !== 'undefined') {
+                contentWayPoint();
+            }
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+(function(){
+    /* Theme toggle & persistence */
+    const btn=document.getElementById('theme-toggle');
+    const prefersDark=window.matchMedia('(prefers-color-scheme:dark)').matches;
+    const stored=localStorage.getItem('theme');
+    const doc=document.documentElement;
+    const setTheme=t=>{doc.setAttribute('data-theme',t);localStorage.setItem('theme',t);};
+    setTheme(stored|| (prefersDark?'dark':'light'));
+    btn.addEventListener('click',()=>{setTheme(doc.getAttribute('data-theme')==='dark'?'light':'dark');});
+    /* Scroll progress */
+    const prog=document.getElementById('scroll-progress');
+    window.addEventListener('scroll',()=>{const h=document.documentElement;
+        const scrolled=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;
+        prog.value=scrolled;
+    });
+    /* Navigation highlight sync */
+    /* Back‑to‑top scroll logic */
+    const btt=document.getElementById('back-to-top');
+    window.addEventListener('scroll',()=>{if(window.scrollY>600){btt.style.display='flex';}else{btt.style.display='none';}});
+    btt.addEventListener('click',()=>{window.scrollTo({top:0,behavior:'smooth'});});
+
+    function navActive(section){
+        const $menu=$('#navbar > ul');
+        $menu.find('li').removeClass('active');
+        $menu.find(`a[data-nav-section="${section}"]`).closest('li').addClass('active');
+    }
+    function navigationSection(){
+        const $sections=$('section[data-section]');
+        $sections.waypoint(function(direction){
+            navActive($(this.element).data('section'));
+        },{offset:'25%'});
+    }
+    $(document).ready(function(){
+        navigationSection();
+        $('#navbar a:not([class="external"])').on('click',function(e){
+            e.preventDefault();
+            const section=$(this).data('nav-section');
+            $('html,body').animate(
+                {scrollTop:$(`[data-section="${section}"]`).offset().top - 20},
+                500
+            );
+        });
+    });
+})();
+</script>
+
+</body>
+</html>
