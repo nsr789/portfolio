@@ -1,36 +1,32 @@
 <!DOCTYPE HTML>
+
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Satwik Nallamilli | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Data Science and AI Enthusiast Portfolio" />
-    <meta name="keywords" content="data science, machine learning, AI, portfolio" />
-    <meta name="author" content="Satwik Nallamilli" />
-
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="Satwik Nallamilli Portfolio"/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:site_name" content=""/>
-    <meta property="og:description" content=""/>
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
-
-    <!-- REPLACE THIS: Favicon - Add your favicon.ico file -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-    
-    <!-- Font Awesome for other icons in the page -->
-    <script src="https://kit.fontawesome.com/b4e46ee3a4.js" crossorigin="anonymous"></script>
-
-    <style>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>Satwik Nallamilli | Portfolio</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Data Science and AI Enthusiast Portfolio" name="description"/>
+<meta content="data science, machine learning, AI, portfolio" name="keywords"/>
+<meta content="Satwik Nallamilli" name="author"/>
+<!-- Facebook and Twitter integration -->
+<meta content="Satwik Nallamilli Portfolio" property="og:title"/>
+<meta content="" property="og:image"/>
+<meta content="" property="og:url"/>
+<meta content="" property="og:site_name"/>
+<meta content="" property="og:description"/>
+<meta content="" name="twitter:title"/>
+<meta content="" name="twitter:image"/>
+<meta content="" name="twitter:url"/>
+<meta content="" name="twitter:card"/>
+<!-- REPLACE THIS: Favicon - Add your favicon.ico file -->
+<link href="images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet"/>
+<!-- Font Awesome for other icons in the page -->
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/b4e46ee3a4.js"></script>
+<style>
         /* CSS Styles */
         @font-face {
             font-family: 'icomoon';
@@ -752,7 +748,6 @@
 .publication-item .pub-meta{color:var(--text);}
 
 </style>
-
 <!-- Custom Overrides -->
 <style id="custom-overrides">
     :root{
@@ -1048,8 +1043,6 @@
 }
 
 </style>
-
-
 <style>
 /* === 2025‑07‑03 Fix 4 — timeline end‑circle alignment === */
 .timeline-centered:before{bottom:0!important;}              /* bar reaches full length */
@@ -1067,13 +1060,11 @@
     box-shadow:0 0 0 5px var(--border)!important;
 }
 </style>
-
 <style>
 /* === 2025‑07‑03 Fix 5 — eliminate gap between bar and end circle === */
 .timeline-entry.begin{margin-bottom:0!important;}
 .timeline-centered:before{bottom:-60px!important;} /* extend bar just a bit past the final entry */
 </style>
-
 <style>
 /* === 2025‑07‑03 Fix 6 — precise bottom circle alignment w/out overlap === */
 .timeline-centered:before{
@@ -1093,7 +1084,6 @@
     box-shadow:0 0 0 5px var(--border) !important;
 }
 </style>
-
 <style>
 /* === 2025‑07‑03 Fix 7 — final bottom circle align === */
 .timeline-centered:before{
@@ -1113,14 +1103,12 @@
     box-shadow:0 0 0 5px var(--border) !important;
 }
 </style>
-
 <style>
 /* === 2025‑07‑03 Fix 8 — final fine‑tune: make circle touch bar === */
 .timeline-entry.begin .timeline-icon.color-none{
     bottom:-33px !important; /* Move up 3px (radius=30) so circle kisses bar */
 }
 </style>
-
 <style>
 /* === 2025‑07‑03 Fix 9 — UI polish per user === */
 /* 1. Unbold timeline dates, roles, programs */
@@ -1149,16 +1137,21 @@
     font-weight:500 !important;
 }
 </style>
-
 <style>
 /* === 2025‑07‑03 Fix 10 — technical skills sub‑heading color harmonized === */
 .skill-category h4{
     color:var(--text) !important;        /* matches sub-heading color sitewide */
 }
 </style>
-
 <style>
-/* === 2025‑07‑03 Fix 11 — project live‑link button side‑by‑side === */
+/* === 2025‑07‑03 Fix 12 — un‑cropped project thumbnails, live link styling, skill heading color === */
+/* Full image in thumbnail without cropping */
+.project{
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+/* Side‑by‑side GitHub & Live buttons */
 .project .desc .project-links{
     display:flex;
     gap:12px;
@@ -1177,560 +1170,791 @@
     background:white;
     color:#2c98f0;
 }
+/* Harmonize technical skills sub‑headings */
+.skill-category h4{
+    color:var(--text) !important;
+}
 </style>
-</head>
+<style>/* === 2025‑07‑03 Fix 13 — projects grid two‑column layout === */
+[data-section="projects"] .row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+}
+[data-section="projects"] .row > .col-md-6{
+    width:calc(50% - 15px);
+    box-sizing:border-box;
+}
+@media(max-width:767px){
+    [data-section="projects"] .row > .col-md-6{
+        width:100%;
+    }
+}</style>
+<style>
+/* === 2025‑07‑16 Fix 14 — Projects grid uniform two‑column layout === */
+/* Use CSS Grid so cards align perfectly in 2‑column rows and wrap gracefully. */
+[data-section="projects"] .row{
+    display:grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap:40px 32px; /* row gap, column gap */
+}
+/* Remove bootstrap column width so grid controls sizing */
+[data-section="projects"] .row > .col-md-6{
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+    box-sizing:border-box;
+}
+/* Make each project card fill column width */
+[data-section="projects"] .project{
+    width:100% !important;
+}
+/* Thumbnail should cover but keep aspect ratio (cropping minimal) */
+[data-section="projects"] .project{
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+    height:260px;  /* consistent card height */
+}
+@media(max-width:767px){
+    [data-section="projects"] .row{
+        grid-template-columns: 1fr;
+    }
+    [data-section="projects"] .project{
+        height: 240px;
+    }
+}
+</style>
+<style>
+/* === 2025‑07‑16 Fix 15 — Complete projects section grid & card styling === */
+/* Grid: always 2 columns on medium+ screens, 1 column on narrow screens */
+[data-section="projects"] .row{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:48px 40px; /* row gap | column gap */
+    margin:0;
+}
+@media(max-width:767px){
+    [data-section="projects"] .row{
+        grid-template-columns:1fr;
+    }
+}
 
+/* Project card baseline */
+[data-section="projects"] .row > .col-md-6{
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+}
+
+/* Maintain 16:9 aspect ratio for thumbnails to avoid cropping issues */
+[data-section="projects"] .project{
+    position:relative;
+    width:100%;
+    padding-top:56.25%;      /* 16:9 ratio */
+    border-radius:8px;
+    overflow:hidden;
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Overlay description panel */
+[data-section="projects"] .project .desc{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    background:rgba(0,0,0,0.55);
+    opacity:1;               /* show by default; reduce on hover if needed */
+    padding:1.25rem;
+    transition:background .25s ease;
+}
+[data-section="projects"] .project:hover .desc{
+    background:rgba(0,0,0,0.75);
+}
+
+/* Text sizing for consistent look */
+[data-section="projects"] .project .desc h3{
+    font-size:1rem;
+    font-weight:600;
+    color:#fff;
+    margin:0 0 .5rem 0;
+}
+[data-section="projects"] .project .desc p{
+    font-size:.9rem;
+    color:#dcdcdc;
+    margin:0 0 .75rem 0;
+}
+[data-section="projects"] .project .desc .tech-stack{
+    font-size:.8rem;
+    margin-bottom:.75rem;
+    color:#b5b5b5;
+}
+
+/* Buttons */
+[data-section="projects"] .project .project-links{
+    display:flex;
+    gap:.75rem;
+    flex-wrap:wrap;
+}
+[data-section="projects"] .project .project-links a{
+    flex:1 1 auto;
+    text-align:center;
+    font-size:.85rem;
+    padding:.55rem .75rem;
+    border-radius:9999px;
+    border:2px solid #fff;
+    color:#fff;
+    text-decoration:none;
+    transition:background .2s,color .2s;
+}
+[data-section="projects"] .project .project-links a:hover{
+    background:#fff;
+    color:#2c98f0;
+}
+</style>
+<style>/* === 2025‑07‑16 Fix 17 — enforce two‑column projects grid with equal card widths === */
+[data-section="projects"] .colorlib-narrow-content > .row{
+    display:grid !important;
+    grid-template-columns:repeat(2,1fr);
+    gap:2rem 2rem;
+    padding:0 1.5rem;
+    box-sizing:border-box;
+}
+@media(max-width:991px){
+    [data-section="projects"] .colorlib-narrow-content > .row{
+        grid-template-columns:1fr;
+        padding:0 1rem;
+    }
+}
+[data-section="projects"] .colorlib-narrow-content > .row > .col-md-6{
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+}
+[data-section="projects"] .project{
+    width:100% !important;
+    padding-top:56.25%;
+    position:relative;
+    border-radius:8px;
+    overflow:hidden;
+    background-size:cover !important;
+    background-position:center !important;
+    background-repeat:no-repeat !important;
+}</style><style>
+/* === 2025‑07‑16 Fix 19 — clean two‑column grid with uniform cards === */
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:2rem 2rem;
+    padding-inline:1.5rem;
+    box-sizing:border-box;
+}
+@media(max-width:767px){
+    .projects-grid{
+        grid-template-columns:1fr;
+        padding-inline:1rem;
+    }
+}
+.projects-grid > .col-md-6{
+    margin:0;
+    padding:0;
+}
+.projects-grid .project{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    border-radius:10px;
+    overflow:hidden;
+    background-size:cover!important;
+    background-position:center!important;
+}
+</style><style>/* === 2025‑07‑16 Fix 20 — project card height, hover reveal, internal layout === */
+.projects-grid .project{
+    height:220px !important;           /* reduced height */
+    padding-top:0 !important;          /* disable ratio padding */
+}
+@media(max-width:767px){
+    .projects-grid .project{
+        height:200px !important;       /* slightly shorter on mobile */
+    }
+}
+/* Hide overlay until hover */
+.projects-grid .project .desc{
+    opacity:0 !important;
+    background:rgba(0,0,0,0.65) !important;
+    transition:opacity .3s ease;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:1rem 1.25rem !important;
+}
+.projects-grid .project:hover .desc{
+    opacity:1 !important;
+}
+/* Internal element spacing */
+.projects-grid .project .desc h3{
+    font-size:1rem;
+    font-weight:600;
+    color:#fff;
+    margin:0 0 .5rem;
+}
+.projects-grid .project .desc p{
+    font-size:.85rem;
+    line-height:1.3;
+    color:#e6e6e6;
+    margin:0 0 .5rem;
+}
+.projects-grid .project .desc .tech-stack{
+    font-size:.75rem;
+    color:#cfcfcf;
+    margin-bottom:.75rem;
+}
+.projects-grid .project .project-links{
+    display:flex;
+    gap:.5rem;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.projects-grid .project .project-links a{
+    flex:1 1 45%;
+    text-align:center;
+    font-size:.8rem;
+    padding:.45rem .6rem;
+    border-radius:9999px;
+    border:2px solid #fff;
+    color:#fff;
+    text-decoration:none;
+    transition:background .2s,color .2s;
+}
+.projects-grid .project .project-links a:hover{
+    background:#fff;
+    color:#2c98f0;
+}</style></head>
 <body>
 <progress id="scroll-progress" max="100" value="0"></progress>
-<button id="theme-toggle" aria-label="Toggle dark mode">
-    <i class="fa-regular fa-moon"></i>
+<button aria-label="Toggle dark mode" id="theme-toggle">
+<i class="fa-regular fa-moon"></i>
 </button>
 <button id="back-to-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
-
-
-    <div id="colorlib-page">
-        <div class="container-wrap">
-            <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-            
-            <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-                <div class="text-center" style="padding: 0 20px;">
-                    <!-- REPLACE THIS: Small profile picture (120x120px circular) -->
-                    <div class="author-img" style="background-image: url(images/profile-dp.jpg);"></div>
-                    <h1 id="colorlib-logo"><a href="index.html">Satwik Nallamilli</a></h1>
-                    <span class="position">Data Science & AI Enthusiast</span>
-                    <p style="font-size: 11px; color: #999; margin-top: 8px;">Driven by curiosity and passion for solving real-world problems with ML & AI</p>
-                </div>
-                
-                <nav id="colorlib-main-menu" role="navigation" class="navbar" style="padding: 0 20px; margin-top: 10px;">
-                    <div id="navbar" class="collapse">
-                        <ul>
-                            <li class="active"><a href="#" data-nav-section="home">Home</a></li>
-                            <li><a href="#" data-nav-section="about">About</a></li>
-                            <li><a href="#" data-nav-section="skills">Skills</a></li>
-                            <li><a href="#" data-nav-section="experience">Experience</a></li>
-                            <li><a href="#" data-nav-section="education">Education</a></li>
-                            <li><a href="#" data-nav-section="projects">Projects</a></li>
-                            <li><a href="#" data-nav-section="publications">Publications</a></li>
-                            <li><a href="#" data-nav-section="extracurriculars">Extra Curriculars</a></li>
-                            <li><a href="#" data-nav-section="contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <div class="social_icon" style="padding: 0 20px;">
-                    <ul>
-                        <!-- REPLACE THESE: Social media icon images (25x25px recommended) -->
-                        <li><a href="https://www.linkedin.com/in/satwik-nallamilli-358397218/" target="_blank">
-                            <img src="images/linkedin-icon.png" alt="LinkedIn">
-                        </a></li>
-                        <li><a href="https://github.com/nsr789" target="_blank">
-                            <img src="images/github-icon.png" alt="GitHub">
-                        </a></li>
-                        <li><a href="https://scholar.google.com/citations?user=t1YF5FoAAAAJ&hl=en" target="_blank">
-                            <img src="images/google-scholar-icon.png" alt="Google Scholar">
-                        </a></li>
-                        <li><a href="https://www.researchgate.net/profile/Sai-Satwik-Reddy-Nallamilli/" target="_blank">
-                            <img src="images/researchgate-icon.png" alt="ResearchGate">
-                        </a></li>
-                    </ul>
-                </div>
-            </aside>
-
-            <div id="colorlib-main">
-                <!-- Home Section -->
-                <section id="colorlib-hero" class="js-fullheight" data-section="home">
-                    <!-- REPLACE THIS: Large hero background image -->
-                    <div class="hero-background" style="background-image: url(images/hero-background.jpg);"></div>
-                    <div class="hero-overlay"></div>
-                    <div class="hero-content">
-                        <div class="hero-text">
-                            <h1>Hi, I'm Satwik</h1>
-                            <h2>I'm <span class="rotating-text">a Data Scientist</span></h2>
-                            <!-- REPLACE THIS: Link to your resume PDF -->
-                            <a href="resume/satwik-resume.pdf" class="btn-download" download>Download My Resume</a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- About Section -->
-                <section class="colorlib-section" data-section="about">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="col-md-12">
-                                        <div class="about-desc">
-                                            <span class="heading-meta">About Me</span>
-                                            <h2 class="colorlib-heading">Who Am I?</h2>
-                                            <p>Hi, I'm Satwik — a  data enthusiast driven by curiosity and a passion for solving real-world problems with machine learning  and AI . With around 1 year of industry experience  in data science and AI roles and over 2.5 years of research experience  exploring the interdisciplinary applications of AI across healthcare , energy , speech processing , and NLP , I thrive at the intersection of data , algorithms , and impact .</p>
-                                            
-                                            <p>I'm deeply committed to continuous learning , pushing the boundaries of what's possible, and contributing to projects that create meaningful change . My journey in data science began during my undergraduate studies at Amrita University, where I discovered the transformative power of AI through hands-on research projects and collaborations with esteemed professors. This foundation has shaped my approach to problem-solving: methodical, innovative, and always focused on real-world applications.</p>
-                                            
-                                            <p>Currently pursuing my Master's degree at UIUC, I'm expanding my expertise in advanced statistical methods and cutting-edge machine learning techniques. Whether it's building scalable data pipelines, developing predictive models, or exploring the latest in generative AI, I approach each challenge with enthusiasm and a commitment to excellence. </p>
-                                            
-                                            <p style="margin-top: 30px;"><strong>Contact me:</strong> satwikreddy987@gmail.com<br>
-                                            <strong>Current Location:</strong> Champaign, IL</p>
-                                            
-                                            <!-- Company Logos Section -->
-                                            <div style="margin-top: 40px; text-align: center;">
-                                                <h4 style="margin-bottom: 20px; color: #999; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">Organizations I've Worked With</h4>
-                                                <div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
-                                                    <!-- REPLACE THESE: Company logos (height: 40px) -->
-                                                    <img class="org-logo" src="images/volkswagen-rect.png" alt="Volkswagen" >
-                                                    <img class="org-logo" src="images/amrita-hospital-rect.png" alt="Amrita Hospital" >
-                                                    <img class="org-logo" src="images/amrita-university-rect.png" alt="Amrita University" >
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Skills Section -->
-                <section class="colorlib-section" data-section="skills">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="col-md-12">
-                                        <span class="heading-meta">My Expertise</span>
-                                        <h2 class="colorlib-heading">Technical Skills</h2>
-                                    </div>
-                                </div>
-                                <div class="skills-wrap">
-                                    <div class="skill-category animate-box" data-animate-effect="fadeInRight">
-                                        <h4>Frameworks/Libraries</h4>
-                                        <div class="skill-tags">
-                                            <span class="skill-tag">NumPy</span>
-                                            <span class="skill-tag">Pandas</span>
-                                            <span class="skill-tag">Apache Spark (PySpark)</span>
-                                            <span class="skill-tag">Scikit-learn</span>
-                                            <span class="skill-tag">PyTorch</span>
-                                            <span class="skill-tag">Hugging Face</span>
-                                            <span class="skill-tag">TensorFlow</span>
-                                            <span class="skill-tag">LangChain</span>
-                                            <span class="skill-tag">CrewAI</span>
-                                            <span class="skill-tag">Chroma</span>
-                                        </div>
-                                    </div>
-                                    <div class="skill-category animate-box" data-animate-effect="fadeInLeft">
-                                        <h4>Specializations</h4>
-                                        <div class="skill-tags">
-                                            <span class="skill-tag">Machine Learning</span>
-                                            <span class="skill-tag">Data Engineering</span>
-                                            <span class="skill-tag">Data Analysis</span>
-                                            <span class="skill-tag">Natural Language Processing</span>
-                                            <span class="skill-tag">Generative AI</span>
-                                            <span class="skill-tag">Big Data</span>
-                                            <span class="skill-tag">Agentic AI</span>
-                                            <span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
-                                        </div>
-                                    </div>
-                                    <div class="skill-category animate-box" data-animate-effect="fadeInRight">
-                                        <h4>Programming Languages</h4>
-                                        <div class="skill-tags">
-                                            <span class="skill-tag">Python (Advanced)</span>
-                                            <span class="skill-tag">SQL (Advanced)</span>
-                                            <span class="skill-tag">Java (Intermediate)</span>
-                                        </div>
-                                    </div>
-                                    <div class="skill-category animate-box" data-animate-effect="fadeInLeft">
-                                        <h4>Tools & Cloud</h4>
-                                        <div class="skill-tags">
-                                            <span class="skill-tag">Docker</span>
-                                            <span class="skill-tag">Git</span>
-                                            <span class="skill-tag">Jira</span>
-                                            <span class="skill-tag">Databricks</span>
-                                            <span class="skill-tag">Tableau</span>
-                                            <span class="skill-tag">AWS (S3, Kinesis, Glue, Athena, Lambda, EC2, QuickSight)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Experience Section -->
-                <section class="colorlib-section" data-section="experience">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="col-md-12">
-                                        <span class="heading-meta">Experience</span>
-                                        <h2 class="colorlib-heading">Work Experience</h2>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="timeline-centered">
-                                            <!-- Volkswagen -->
-                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon">
-                                                        <!-- REPLACE THIS: Volkswagen logo for timeline -->
-                                                        <img class="org-logo" src="images/volkswagen-logo.png" alt="Volkswagen">
-                                                    </div>
-                                                    <div class="timeline-label">
-                                                        <h2>Volkswagen Group<br><span>Data Science Intern<br>Sep 2024 – Feb 2025 | Pune, India</span></h2>
-                                                        <p><em>Python, SQL, PySpark, AWS, REST APIs, Postman</em></p>
-                                                        <ul>
-                                                            <li>Developed an end-to-end <strong>HR analytics solution</strong> on AWS to support workforce decision-making for <strong>70,000+ employees</strong>, integrating OAuth-secured data from <strong>SAP SuccessFactors</strong> and internal enterprise sources.</li>
-                                                            <li>Engineered a robust <strong>ELT pipeline</strong> using API-based data ingestion, <strong>AWS Glue with PySpark scripts</strong> for scalable and efficient data transformations, and <strong>Amazon S3</strong> for storage of raw and processed datasets.</li>
-                                                            <li>Accelerated data querying by <strong>30%</strong> with optimized <strong>Amazon Athena</strong> queries and partitioning strategies, and built a <strong>near real-time</strong>, interactive dashboard in <strong>Amazon QuickSight</strong> for HR analytics.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Amrita Hospital -->
-                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon">
-                                                        <!-- REPLACE THIS: Amrita Hospital logo for timeline -->
-                                                        <img class="org-logo" src="images/amrita-hospital-logo.png" alt="Amrita Hospital">
-                                                    </div>
-                                                    <div class="timeline-label">
-                                                        <h2>Amrita Hospital<br><span>AI Intern<br>Nov 2023 – Feb 2024 | Kochi, India</span></h2>
-                                                        <p><em>Python, PyTorch, NumPy, Pandas, Matplotlib, GANs</em></p>
-                                                        <ul>
-                                                            <li>Built and integrated a <strong>PyTorch-based image classifier</strong> into a healthcare web app, enabling automated diagnosis support using <strong>25,000+ clinical images</strong>.</li>
-                                                            <li>Designed and implemented a complete <strong>data preprocessing pipeline</strong>—including cleaning, normalization, resizing, and artifact removal—to prepare high-quality training data.</li>
-                                                            <li>Fine-tuned <strong>ResNet</strong>, <strong>EfficientNet</strong>, and <strong>Vision Transformer (ViT)</strong> on <strong>GAN-augmented datasets</strong>, boosting classification accuracy by <strong>20%</strong>.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Research Assistant -->
-                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon">
-                                                        <!-- REPLACE THIS: Amrita University logo for timeline -->
-                                                        <img class="org-logo" src="images/amrita-university-logo.png" alt="Amrita University">
-                                                    </div>
-                                                    <div class="timeline-label">
-                                                        <h2>Amrita School of Artificial Intelligence<br><span>Undergraduate Research Assistant<br>Jan 2022 – Aug 2024 | Coimbatore, India</span></h2>
-                                                        <ul>
-                                                            <li>Worked under the guidance of four senior faculty members: <strong>Dr. K.P. Soman, Dr. Sowmya V, Dr. Vinayakumar R</strong>, and <strong>Dr. Sachin Kumar S</strong> on interdisciplinary research projects across <strong>healthcare</strong>, <strong>speech processing</strong>, <strong>energy systems</strong>, and <strong>e-commerce</strong>.</li>
-                                                            <li>Handled diverse data types including <strong>images</strong>, <strong>audio</strong>, <strong>text</strong>, <strong>structured tabular (CSV)</strong>, and <strong>time-series data</strong>, adapting preprocessing pipelines accordingly.</li>
-                                                            <li>Gained hands-on experience in <strong>deep learning</strong>, <strong>machine learning</strong>, <strong>natural language processing</strong>, <strong>signal processing</strong>, <strong>time-series forecasting</strong>, <strong>generative AI</strong>, and <strong>statistical modeling</strong>.</li>
-                                                            <li>Contributed to the full ML lifecycle—data preprocessing, model development, evaluation, and implementation—with multiple projects leading to <strong>peer-reviewed publications</strong>.</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon color-none"></div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Education Section -->
-                <section class="colorlib-section" data-section="education">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="col-md-12">
-                                        <span class="heading-meta">Education</span>
-                                        <h2 class="colorlib-heading">Academic Background</h2>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="timeline-centered">
-                                            <!-- UIUC -->
-                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon">
-                                                        <!-- REPLACE THIS: UIUC logo for timeline -->
-                                                        <img class="org-logo" src="images/uiuc-logo.png" alt="UIUC">
-                                                    </div>
-                                                    <div class="timeline-label">
-                                                        <h2>University of Illinois Urbana-Champaign<br><span>Master of Science - MS, Statistics (Data Science)<br>August 2025 - May 2027</span></h2>
-                                                        <p><strong>GPA: 4.0/4.0</strong></p>
-                                                        <p>I am currently pursuing my Master of Science in Statistics at the University of Illinois Urbana-Champaign, Illinois, USA. I am delving deeper into mathematical concepts to further strengthen my expertise in data science and artificial intelligence. Additionally, I am working on several exciting projects in data science and generative AI.</p>
-                                                        <p><strong>Relevant Coursework (In Progress):</strong><br>
+<div id="colorlib-page">
+<div class="container-wrap">
+<a aria-controls="navbar" aria-expanded="false" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-target="#navbar" data-toggle="collapse" href="#"><i></i></a>
+<aside class="border js-fullheight" id="colorlib-aside" role="complementary">
+<div class="text-center" style="padding: 0 20px;">
+<!-- REPLACE THIS: Small profile picture (120x120px circular) -->
+<div class="author-img" style="background-image: url(images/profile-dp.jpg);"></div>
+<h1 id="colorlib-logo"><a href="index.html">Satwik Nallamilli</a></h1>
+<span class="position">Data Science &amp; AI Enthusiast</span>
+<p style="font-size: 11px; color: #999; margin-top: 8px;">Driven by curiosity and passion for solving real-world problems with ML &amp; AI</p>
+</div>
+<nav class="navbar" id="colorlib-main-menu" role="navigation" style="padding: 0 20px; margin-top: 10px;">
+<div class="collapse" id="navbar">
+<ul>
+<li class="active"><a data-nav-section="home" href="#">Home</a></li>
+<li><a data-nav-section="about" href="#">About</a></li>
+<li><a data-nav-section="skills" href="#">Skills</a></li>
+<li><a data-nav-section="experience" href="#">Experience</a></li>
+<li><a data-nav-section="education" href="#">Education</a></li>
+<li><a data-nav-section="projects" href="#">Projects</a></li>
+<li><a data-nav-section="publications" href="#">Publications</a></li>
+<li><a data-nav-section="extracurriculars" href="#">Extra Curriculars</a></li>
+<li><a data-nav-section="contact" href="#">Contact</a></li>
+</ul>
+</div>
+</nav>
+<div class="social_icon" style="padding: 0 20px;">
+<ul>
+<!-- REPLACE THESE: Social media icon images (25x25px recommended) -->
+<li><a href="https://www.linkedin.com/in/satwik-nallamilli-358397218/" target="_blank">
+<img alt="LinkedIn" src="images/linkedin-icon.png"/>
+</a></li>
+<li><a href="https://github.com/nsr789" target="_blank">
+<img alt="GitHub" src="images/github-icon.png"/>
+</a></li>
+<li><a href="https://scholar.google.com/citations?user=t1YF5FoAAAAJ&amp;hl=en" target="_blank">
+<img alt="Google Scholar" src="images/google-scholar-icon.png"/>
+</a></li>
+<li><a href="https://www.researchgate.net/profile/Sai-Satwik-Reddy-Nallamilli/" target="_blank">
+<img alt="ResearchGate" src="images/researchgate-icon.png"/>
+</a></li>
+</ul>
+</div>
+</aside>
+<div id="colorlib-main">
+<!-- Home Section -->
+<section class="js-fullheight" data-section="home" id="colorlib-hero">
+<!-- REPLACE THIS: Large hero background image -->
+<div class="hero-background" style="background-image: url(images/hero-background.jpg);"></div>
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<div class="hero-text">
+<h1>Hi, I'm Satwik</h1>
+<h2>I'm <span class="rotating-text">a Data Scientist</span></h2>
+<!-- REPLACE THIS: Link to your resume PDF -->
+<a class="btn-download" download="" href="resume/satwik-resume.pdf">Download My Resume</a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="colorlib-section" data-section="about">
+<div class="colorlib-narrow-content">
+<div class="row">
+<div class="col-md-12">
+<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+<div class="col-md-12">
+<div class="about-desc">
+<span class="heading-meta">About Me</span>
+<h2 class="colorlib-heading">Who Am I?</h2>
+<p>Hi, I'm Satwik — a  data enthusiast driven by curiosity and a passion for solving real-world problems with machine learning  and AI . With around 1 year of industry experience  in data science and AI roles and over 2.5 years of research experience  exploring the interdisciplinary applications of AI across healthcare , energy , speech processing , and NLP , I thrive at the intersection of data , algorithms , and impact .</p>
+<p>I'm deeply committed to continuous learning , pushing the boundaries of what's possible, and contributing to projects that create meaningful change . My journey in data science began during my undergraduate studies at Amrita University, where I discovered the transformative power of AI through hands-on research projects and collaborations with esteemed professors. This foundation has shaped my approach to problem-solving: methodical, innovative, and always focused on real-world applications.</p>
+<p>Currently pursuing my Master's degree at UIUC, I'm expanding my expertise in advanced statistical methods and cutting-edge machine learning techniques. Whether it's building scalable data pipelines, developing predictive models, or exploring the latest in generative AI, I approach each challenge with enthusiasm and a commitment to excellence. </p>
+<p style="margin-top: 30px;"><strong>Contact me:</strong> satwikreddy987@gmail.com<br/>
+<strong>Current Location:</strong> Champaign, IL</p>
+<!-- Company Logos Section -->
+<div style="margin-top: 40px; text-align: center;">
+<h4 style="margin-bottom: 20px; color: #999; font-size: 14px; text-transform: uppercase; letter-spacing: 2px;">Organizations I've Worked With</h4>
+<div style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
+<!-- REPLACE THESE: Company logos (height: 40px) -->
+<img alt="Volkswagen" class="org-logo" src="images/volkswagen-rect.png"/>
+<img alt="Amrita Hospital" class="org-logo" src="images/amrita-hospital-rect.png"/>
+<img alt="Amrita University" class="org-logo" src="images/amrita-university-rect.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="colorlib-section" data-section="skills">
+<div class="colorlib-narrow-content">
+<div class="row">
+<div class="col-md-12">
+<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+<div class="col-md-12">
+<span class="heading-meta">My Expertise</span>
+<h2 class="colorlib-heading">Technical Skills</h2>
+</div>
+</div>
+<div class="skills-wrap">
+<div class="skill-category animate-box" data-animate-effect="fadeInRight">
+<h4>Frameworks/Libraries</h4>
+<div class="skill-tags">
+<span class="skill-tag">NumPy</span>
+<span class="skill-tag">Pandas</span>
+<span class="skill-tag">Apache Spark (PySpark)</span>
+<span class="skill-tag">Scikit-learn</span>
+<span class="skill-tag">PyTorch</span>
+<span class="skill-tag">Hugging Face</span>
+<span class="skill-tag">TensorFlow</span>
+<span class="skill-tag">LangChain</span>
+<span class="skill-tag">CrewAI</span>
+<span class="skill-tag">Chroma</span>
+</div>
+</div>
+<div class="skill-category animate-box" data-animate-effect="fadeInLeft">
+<h4>Specializations</h4>
+<div class="skill-tags">
+<span class="skill-tag">Machine Learning</span>
+<span class="skill-tag">Data Engineering</span>
+<span class="skill-tag">Data Analysis</span>
+<span class="skill-tag">Natural Language Processing</span>
+<span class="skill-tag">Generative AI</span>
+<span class="skill-tag">Big Data</span>
+<span class="skill-tag">Agentic AI</span>
+<span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
+</div>
+</div>
+<div class="skill-category animate-box" data-animate-effect="fadeInRight">
+<h4>Programming Languages</h4>
+<div class="skill-tags">
+<span class="skill-tag">Python (Advanced)</span>
+<span class="skill-tag">SQL (Advanced)</span>
+<span class="skill-tag">Java (Intermediate)</span>
+</div>
+</div>
+<div class="skill-category animate-box" data-animate-effect="fadeInLeft">
+<h4>Tools &amp; Cloud</h4>
+<div class="skill-tags">
+<span class="skill-tag">Docker</span>
+<span class="skill-tag">Git</span>
+<span class="skill-tag">Jira</span>
+<span class="skill-tag">Databricks</span>
+<span class="skill-tag">Tableau</span>
+<span class="skill-tag">AWS (S3, Kinesis, Glue, Athena, Lambda, EC2, QuickSight)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="colorlib-section" data-section="experience">
+<div class="colorlib-narrow-content">
+<div class="row">
+<div class="col-md-12">
+<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+<div class="col-md-12">
+<span class="heading-meta">Experience</span>
+<h2 class="colorlib-heading">Work Experience</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="timeline-centered">
+<!-- Volkswagen -->
+<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+<div class="timeline-entry-inner">
+<div class="timeline-icon">
+<!-- REPLACE THIS: Volkswagen logo for timeline -->
+<img alt="Volkswagen" class="org-logo" src="images/volkswagen-logo.png"/>
+</div>
+<div class="timeline-label">
+<h2>Volkswagen Group<br/><span>Data Science Intern<br/>Sep 2024 – Feb 2025 | Pune, India</span></h2>
+<p><em>Python, SQL, PySpark, AWS, REST APIs, Postman</em></p>
+<ul>
+<li>Developed an end-to-end <strong>HR analytics solution</strong> on AWS to support workforce decision-making for <strong>70,000+ employees</strong>, integrating OAuth-secured data from <strong>SAP SuccessFactors</strong> and internal enterprise sources.</li>
+<li>Engineered a robust <strong>ELT pipeline</strong> using API-based data ingestion, <strong>AWS Glue with PySpark scripts</strong> for scalable and efficient data transformations, and <strong>Amazon S3</strong> for storage of raw and processed datasets.</li>
+<li>Accelerated data querying by <strong>30%</strong> with optimized <strong>Amazon Athena</strong> queries and partitioning strategies, and built a <strong>near real-time</strong>, interactive dashboard in <strong>Amazon QuickSight</strong> for HR analytics.</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- Amrita Hospital -->
+<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+<div class="timeline-entry-inner">
+<div class="timeline-icon">
+<!-- REPLACE THIS: Amrita Hospital logo for timeline -->
+<img alt="Amrita Hospital" class="org-logo" src="images/amrita-hospital-logo.png"/>
+</div>
+<div class="timeline-label">
+<h2>Amrita Hospital<br/><span>AI Intern<br/>Nov 2023 – Feb 2024 | Kochi, India</span></h2>
+<p><em>Python, PyTorch, NumPy, Pandas, Matplotlib, GANs</em></p>
+<ul>
+<li>Built and integrated a <strong>PyTorch-based image classifier</strong> into a healthcare web app, enabling automated diagnosis support using <strong>25,000+ clinical images</strong>.</li>
+<li>Designed and implemented a complete <strong>data preprocessing pipeline</strong>—including cleaning, normalization, resizing, and artifact removal—to prepare high-quality training data.</li>
+<li>Fine-tuned <strong>ResNet</strong>, <strong>EfficientNet</strong>, and <strong>Vision Transformer (ViT)</strong> on <strong>GAN-augmented datasets</strong>, boosting classification accuracy by <strong>20%</strong>.</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- Research Assistant -->
+<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+<div class="timeline-entry-inner">
+<div class="timeline-icon">
+<!-- REPLACE THIS: Amrita University logo for timeline -->
+<img alt="Amrita University" class="org-logo" src="images/amrita-university-logo.png"/>
+</div>
+<div class="timeline-label">
+<h2>Amrita School of Artificial Intelligence<br/><span>Undergraduate Research Assistant<br/>Jan 2022 – Aug 2024 | Coimbatore, India</span></h2>
+<ul>
+<li>Worked under the guidance of four senior faculty members: <strong>Dr. K.P. Soman, Dr. Sowmya V, Dr. Vinayakumar R</strong>, and <strong>Dr. Sachin Kumar S</strong> on interdisciplinary research projects across <strong>healthcare</strong>, <strong>speech processing</strong>, <strong>energy systems</strong>, and <strong>e-commerce</strong>.</li>
+<li>Handled diverse data types including <strong>images</strong>, <strong>audio</strong>, <strong>text</strong>, <strong>structured tabular (CSV)</strong>, and <strong>time-series data</strong>, adapting preprocessing pipelines accordingly.</li>
+<li>Gained hands-on experience in <strong>deep learning</strong>, <strong>machine learning</strong>, <strong>natural language processing</strong>, <strong>signal processing</strong>, <strong>time-series forecasting</strong>, <strong>generative AI</strong>, and <strong>statistical modeling</strong>.</li>
+<li>Contributed to the full ML lifecycle—data preprocessing, model development, evaluation, and implementation—with multiple projects leading to <strong>peer-reviewed publications</strong>.</li>
+</ul>
+</div>
+</div>
+</article>
+<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+<div class="timeline-entry-inner">
+<div class="timeline-icon color-none"></div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section class="colorlib-section" data-section="education">
+<div class="colorlib-narrow-content">
+<div class="row">
+<div class="col-md-12">
+<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+<div class="col-md-12">
+<span class="heading-meta">Education</span>
+<h2 class="colorlib-heading">Academic Background</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="timeline-centered">
+<!-- UIUC -->
+<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+<div class="timeline-entry-inner">
+<div class="timeline-icon">
+<!-- REPLACE THIS: UIUC logo for timeline -->
+<img alt="UIUC" class="org-logo" src="images/uiuc-logo.png"/>
+</div>
+<div class="timeline-label">
+<h2>University of Illinois Urbana-Champaign<br/><span>Master of Science - MS, Statistics (Data Science)<br/>August 2025 - May 2027</span></h2>
+<p><strong>GPA: 4.0/4.0</strong></p>
+<p>I am currently pursuing my Master of Science in Statistics at the University of Illinois Urbana-Champaign, Illinois, USA. I am delving deeper into mathematical concepts to further strengthen my expertise in data science and artificial intelligence. Additionally, I am working on several exciting projects in data science and generative AI.</p>
+<p><strong>Relevant Coursework (In Progress):</strong><br/>
                                                         Statistics and Probability II, Statistical Modeling I, Advanced Data Analysis</p>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Amrita -->
-                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon">
-                                                        <!-- REPLACE THIS: Amrita University logo for timeline -->
-                                                        <img class="org-logo" src="images/amrita-university-logo.png" alt="Amrita">
-                                                    </div>
-                                                    <div class="timeline-label">
-                                                        <h2>Amrita Vishwa Vidyapeetham, Coimbatore<br><span>Bachelor of Technology - BTech, Computer Science and Engineering (Artificial Intelligence)<br>August 2021 - May 2025</span></h2>
-                                                        <p><strong>Grade: 8.46/10 (First Class with Distinction)</strong></p>
-                                                        <p>I completed my Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence from Amrita Vishwa Vidyapeetham, Coimbatore, India. During my undergraduate studies, I conducted research under the guidance of senior professors, applying AI to interdisciplinary domains such as healthcare, speech processing, energy systems, e-commerce, and natural language processing, resulting in several peer-reviewed, Scopus-indexed international publications. Beyond academics, I served as the lead of the Nature Club, organized multiple cultural fests, and conducted technical workshops for freshmen during college tech fests. I also pursued internships to broaden my technical skill set. My undergraduate journey was a challenging yet rewarding phase that taught me independence, adaptability, and self-sufficiency.</p>
-                                                        <p><strong>Relevant Coursework:</strong><br>
-                                                        <strong>1. Machine Learning & AI:</strong> Reinforcement Learning, Deep Learning for Signal & Image Processing, AI in Natural Language Processing, AI in Speech Processing<br>
-                                                        <strong>2. Data Science Foundations:</strong> Statistics & Probability, Linear Algebra, Optimization, Calculus<br>
-                                                        <strong>3. Data Engineering & Systems:</strong> Big Data Analytics, Big Data and Database Management, Cloud Computing, Database Management Systems<br>
-                                                        <strong>4. Computer Science Fundamentals:</strong> Data Structures & Algorithms, Computer Networks</p>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon color-none"></div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Projects Section -->
-                <section class="colorlib-section" data-section="projects">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="col-md-12">
-                                        <span class="heading-meta">My Work</span>
-                                        <h2 class="colorlib-heading">Projects</h2>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <!-- Project 1 -->
-                                    <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                        <!-- REPLACE THIS: Project thumbnail image -->
-                                        <div class="project" style="background-image: url(images/project1-thumbnail.jpg);">
-                                            <div class="desc">
-                                                <h3>AI-Powered Trading Intelligence Platform</h3>
-                                                <p>A lightweight research cockpit that ingests market & macro data, computes signals, and orchestrates multi-agent LLM reasoning.</p>
-                                                <p class="tech-stack">Tech Stack: Python, CrewAI, LangChain, ChromaDB, Streamlit, Joblib</p>
-                                                <div class="project-links"><a href="https://github.com/nsr789/quantum-trading-intelligence" target="_blank" class="github-link">View on GitHub</a><a href="https://quantum-trading-intelligence.streamlit.app/" target="_blank" class="live-link">Live Demo</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Project 2 -->
-                                    <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                                        <!-- REPLACE THIS: Project thumbnail image -->
-                                        <div class="project" style="background-image: url(images/project2-thumbnail.jpg);">
-                                            <div class="desc">
-                                                <h3>Sample Project 2</h3>
-                                                <p>Brief description of the project and its impact on solving real-world problems.</p>
-                                                <p class="tech-stack">Tech Stack: React, Node.js, MongoDB</p>
-                                                <div class="project-links"><a href="https://github.com/yourusername/project2" target="_blank" class="github-link">View on GitHub</a><a href="https://example.com/project-live" target="_blank" class="live-link">Live Demo</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Add more projects as needed -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Publications Section -->
-                <section class="colorlib-section" data-section="publications">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="col-md-12">
-                                        <span class="heading-meta">Research Work</span>
-                                        <h2 class="colorlib-heading">Publications</h2>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <!-- Publications in reverse chronological order -->
-                                        <div class="publication-item animate-box" data-animate-effect="fadeInRight">
-                                            <h4><a href="https://doi.org/10.1007/978-3-031-72636-1_11" target="_blank">Accurate Estimation of Cargo Power Using Machine Learning Algorithms</a></h4>
-                                            <p class="pub-meta">Venkata Siva Manoj, A., <strong>N. <strong>Sai Satwik Reddy</strong></strong>, V. Venkata Alluri Rohith, V. Sowmya, and Vinayakumar Ravi<br>
-                                            Analytics Modeling in Reliability and Machine Learning and Its Applications, pp. 213-236. Cham: Springer Nature Switzerland, 2025.<br>
-                                            <strong>Published:</strong> 21 January 2025</p>
-                                        </div>
-
-                                        <div class="publication-item animate-box" data-animate-effect="fadeInLeft">
-                                            <h4><a href="https://doi.org/10.1109/ICCCNT61001.2024.10725674" target="_blank">Transfer Learning-Based Emotion Recognition Using Augmented Speech Data</a></h4>
-                                            <p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, V. Venkata Alluri Rohith, V. Poorna Muni Sasidhar Reddy, and Y. Shashank Reddy<br>
-                                            2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT), pp. 1-7. IEEE, 2024.<br>
-                                            <strong>Published:</strong> 04 November 2024</p>
-                                        </div>
-
-                                        <div class="publication-item animate-box" data-animate-effect="fadeInRight">
-                                            <h4><a href="https://doi.org/10.1007/978-981-97-4149-6_35" target="_blank">Fast Iterative Filtering-Based Deep Belief Network for Accurate Short-term Electric Load Forecasting</a></h4>
-                                            <p class="pub-meta"><strong>Sai Satwik Reddy</strong>, N., A. Venkata Siva Manoj, Neethu Mohan, S. Sachin Kumar, and K. P. Soman<br>
-                                            International Conference On Innovative Computing And Communication, pp. 521-530. Singapore: Springer Nature Singapore, 2024.<br>
-                                            <strong>Published:</strong> 27 September 2024</p>
-                                        </div>
-
-                                        <div class="publication-item animate-box" data-animate-effect="fadeInLeft">
-                                            <h4><a href="https://doi.org/10.1109/ICICT60155.2024.10544665" target="_blank">Enhancing Product Categorization in E-commerce using NLP and Machine Learning</a></h4>
-                                            <p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, V. Venkata Alluri Rohith, P. Sai Abhiram, M. Devi Siva Rama Saran, and Samya Rebecca<br>
-                                            2024 International Conference on Inventive Computation Technologies (ICICT), pp. 1-6. IEEE, 2024.<br>
-                                            <strong>Published:</strong> 07 June 2024</p>
-                                        </div>
-
-                                        <div class="publication-item animate-box" data-animate-effect="fadeInRight">
-                                            <h4><a href="https://doi.org/10.1007/978-3-031-56703-2_18" target="_blank">Transfer Learning Approach for Differentiating Parkinson's Syndromes Using Voice Recordings</a></h4>
-                                            <p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, A. Venkata Siva Manoj, V. Poorna Muni Sasidhar Reddy, Aadharsh Aadhithya, and V. Sowmya<br>
-                                            International Advanced Computing Conference, pp. 213-226. Cham: Springer Nature Switzerland, 2023.<br>
-                                            <strong>Published:</strong> 26 March 2024</p>
-                                        </div>
-
-                                        <div class="publication-item animate-box" data-animate-effect="fadeInLeft">
-                                            <h4><a href="https://doi.org/10.1007/978-3-031-56703-2_32" target="_blank">Classification of Colorectal Cancer Tissue Utilizing Machine Learning Algorithms</a></h4>
-                                            <p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, A. Venkata Siva Manoj, and V. Sowmya<br>
-                                            International Advanced Computing Conference, pp. 397-409. Cham: Springer Nature Switzerland, 2023.<br>
-                                            <strong>Published:</strong> 26 March 2024</p>
-                                        </div>
-
-                                        <div class="publication-item animate-box" data-animate-effect="fadeInRight">
-                                            <h4><a href="https://doi.org/10.1109/CONIT59222.2023.10205633" target="_blank">A Fast Iterative Filtering Method for Efficient Denoising of Phonocardiogram Signals</a></h4>
-                                            <p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, V. Poorna Muni Saisdhar Reddy, Neethu Mohan, Sachin Kumar, and Soman KP<br>
-                                            2023 3rd International Conference on Intelligent Technologies (CONIT), pp. 1-6. IEEE, 2023.<br>
-                                            <strong>Published:</strong> 07 August 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Extra Curriculars Section -->
-                <section class="colorlib-section" data-section="extracurriculars">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="col-md-12">
-                                        <span class="heading-meta">Beyond Academics</span>
-                                        <h2 class="colorlib-heading">Extra Curricular Activities</h2>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="timeline-centered">
-                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon icon-style" style="background: #2c98f0;">
-                                                        <i class="fa-solid fa-chalkboard-teacher" style="color: white;"></i>
-                                                    </div>
-                                                    <div class="timeline-label">
-                                                        <h2>Workshop on LLMs<br><span>October 2024</span></h2>
-                                                        <p>Organized a workshop on Large Language Models for freshmen at Anokha Tech Fest, Amrita University</p>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon icon-style" style="background: #ec5453;">
-                                                        <i class="fa-solid fa-lightbulb" style="color: white;"></i>
-                                                    </div>
-                                                    <div class="timeline-label">
-                                                        <h2>IEEE Idea-thon<br><span>April 2024</span></h2>
-                                                        <p>Conducted idea-thon as IEEE student member at Amrita University</p>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon icon-style" style="background: #f9bf3f;">
-                                                        <i class="fa-solid fa-tree" style="color: white;"></i>
-                                                    </div>
-                                                    <div class="timeline-label">
-                                                        <h2>Nature Club Lead<br><span>June 2022 – June 2024</span></h2>
-                                                        <p>Led sapling plantation event on World Environment Day for three consecutive years as the Lead of the Nature Club at Amrita University</p>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                                                <div class="timeline-entry-inner">
-                                                    <div class="timeline-icon color-none"></div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Contact Section -->
-                <section class="colorlib-section" data-section="contact">
-                    <div class="colorlib-narrow-content">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-                                    <div class="col-md-12">
-                                        <span class="heading-meta">Get in Touch</span>
-                                        <h2 class="colorlib-heading">Contact</h2>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="contact-info animate-box" data-animate-effect="fadeInLeft">
-                                            <p><i class="fa-solid fa-envelope"></i> satwikreddy987@gmail.com</p>
-                                            <p><i class="fa-solid fa-map-marker-alt"></i> Champaign, IL</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="row">
-                                            <div class="col-md-12 animate-box" data-animate-effect="fadeInRight">
-                                                <h3>Drop me a message</h3>
-                                                <form action="mailto:satwikreddy987@gmail.com" method="post" enctype="text/plain">
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Your Name" name="name" required>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="email" class="form-control" placeholder="Your Email" name="email" required>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Subject" name="subject">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
+</div>
+</div>
+</article>
+<!-- Amrita -->
+<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+<div class="timeline-entry-inner">
+<div class="timeline-icon">
+<!-- REPLACE THIS: Amrita University logo for timeline -->
+<img alt="Amrita" class="org-logo" src="images/amrita-university-logo.png"/>
+</div>
+<div class="timeline-label">
+<h2>Amrita Vishwa Vidyapeetham, Coimbatore<br/><span>Bachelor of Technology - BTech, Computer Science and Engineering (Artificial Intelligence)<br/>August 2021 - May 2025</span></h2>
+<p><strong>Grade: 8.46/10 (First Class with Distinction)</strong></p>
+<p>I completed my Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence from Amrita Vishwa Vidyapeetham, Coimbatore, India. During my undergraduate studies, I conducted research under the guidance of senior professors, applying AI to interdisciplinary domains such as healthcare, speech processing, energy systems, e-commerce, and natural language processing, resulting in several peer-reviewed, Scopus-indexed international publications. Beyond academics, I served as the lead of the Nature Club, organized multiple cultural fests, and conducted technical workshops for freshmen during college tech fests. I also pursued internships to broaden my technical skill set. My undergraduate journey was a challenging yet rewarding phase that taught me independence, adaptability, and self-sufficiency.</p>
+<p><strong>Relevant Coursework:</strong><br/>
+<strong>1. Machine Learning &amp; AI:</strong> Reinforcement Learning, Deep Learning for Signal &amp; Image Processing, AI in Natural Language Processing, AI in Speech Processing<br/>
+<strong>2. Data Science Foundations:</strong> Statistics &amp; Probability, Linear Algebra, Optimization, Calculus<br/>
+<strong>3. Data Engineering &amp; Systems:</strong> Big Data Analytics, Big Data and Database Management, Cloud Computing, Database Management Systems<br/>
+<strong>4. Computer Science Fundamentals:</strong> Data Structures &amp; Algorithms, Computer Networks</p>
+</div>
+</div>
+</article>
+<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+<div class="timeline-entry-inner">
+<div class="timeline-icon color-none"></div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="colorlib-section" data-section="projects">
+<div class="colorlib-narrow-content"><div class="row"><div class="col-md-12"><div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft"><div class="col-md-12"><span class="heading-meta">My Work</span><h2 class="colorlib-heading">Projects</h2></div></div></div></div>
+<div class="projects-grid"><div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+<!-- REPLACE THIS: Project thumbnail image -->
+<div class="project" style="background-image: url(images/project1-thumbnail.jpg);">
+<div class="desc">
+<h3>AI-Powered Trading Intelligence Platform</h3>
+<p>"A lightweight research cockpit that ingests market & macro data, computes signals, and orchestrates multi-agent LLM reasoning."</p>
+<p class="tech-stack">Tech Stack: Python, CrewAI, LangChain, ChromaDB, Streamlit, Joblib</p>
+<div class="project-links"><a class="github-link" href="https://github.com/nsr789/quantum-trading-intelligence" target="_blank">View on GitHub</a><a class="live-link" href="https://quantum-trading-intelligence.streamlit.app/" target="_blank">Live Demo</a></div>
+</div>
+</div>
+</div><div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+<!-- REPLACE THIS: Project thumbnail image -->
+<div class="project" style="background-image: url(images/project2-thumbnail.jpg);">
+<div class="desc">
+<h3>4-Wheeled Autonomous Robot Navigation Simulation</h3>
+<p>"A ROS2/Gazebo simulation of an autonomous 4-wheeled robot with lidar/camera sensing, path planning, and OpenCV-based traffic sign classification for intelligent navigation."</p>
+<p class="tech-stack">Tech Stack: Python, Gazebo, ROS2, OpenCV, Yolov5</p>
+<div class="project-links"><a class="github-link" href="https://github.com/nsr789/nav_bot" target="_blank">View on GitHub</a><a class="live-link" href="https://youtu.be/UnKrqkgXtco?si=eo_t2zy1Reg1WKBp" target="_blank">Live Demo</a></div>
+</div>
+</div>
+</div><div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+<div class="project" style="background-image: url(images/placeholder-thumbnail.jpg);">
+<div class="desc">
+<h3>Sample Project 3</h3>
+<p>Brief description of the project and its impact on solving real-world problems.</p>
+<p class="tech-stack">Tech Stack: TBD</p>
+<div class="project-links"><a class="github-link" href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a><a class="live-link" href="https://example.com/project-live" target="_blank">Live Demo</a></div>
+</div>
+</div>
+</div><div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+<div class="project" style="background-image: url(images/placeholder-thumbnail.jpg);">
+<div class="desc">
+<h3>Sample Project 4</h3>
+<p>Brief description of the project and its impact on solving real-world problems.</p>
+<p class="tech-stack">Tech Stack: TBD</p>
+<div class="project-links"><a class="github-link" href="https://github.com/yourusername/project4" target="_blank">View on GitHub</a><a class="live-link" href="https://example.com/project-live" target="_blank">Live Demo</a></div>
+</div>
+</div>
+</div></div></div>
+</section>
+<!-- Publications Section -->
+<section class="colorlib-section" data-section="publications">
+<div class="colorlib-narrow-content">
+<div class="row">
+<div class="col-md-12">
+<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+<div class="col-md-12">
+<span class="heading-meta">Research Work</span>
+<h2 class="colorlib-heading">Publications</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<!-- Publications in reverse chronological order -->
+<div class="publication-item animate-box" data-animate-effect="fadeInRight">
+<h4><a href="https://doi.org/10.1007/978-3-031-72636-1_11" target="_blank">Accurate Estimation of Cargo Power Using Machine Learning Algorithms</a></h4>
+<p class="pub-meta">Venkata Siva Manoj, A., <strong>N. <strong>Sai Satwik Reddy</strong></strong>, V. Venkata Alluri Rohith, V. Sowmya, and Vinayakumar Ravi<br/>
+                                            Analytics Modeling in Reliability and Machine Learning and Its Applications, pp. 213-236. Cham: Springer Nature Switzerland, 2025.<br/>
+<strong>Published:</strong> 21 January 2025</p>
+</div>
+<div class="publication-item animate-box" data-animate-effect="fadeInLeft">
+<h4><a href="https://doi.org/10.1109/ICCCNT61001.2024.10725674" target="_blank">Transfer Learning-Based Emotion Recognition Using Augmented Speech Data</a></h4>
+<p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, V. Venkata Alluri Rohith, V. Poorna Muni Sasidhar Reddy, and Y. Shashank Reddy<br/>
+                                            2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT), pp. 1-7. IEEE, 2024.<br/>
+<strong>Published:</strong> 04 November 2024</p>
+</div>
+<div class="publication-item animate-box" data-animate-effect="fadeInRight">
+<h4><a href="https://doi.org/10.1007/978-981-97-4149-6_35" target="_blank">Fast Iterative Filtering-Based Deep Belief Network for Accurate Short-term Electric Load Forecasting</a></h4>
+<p class="pub-meta"><strong>Sai Satwik Reddy</strong>, N., A. Venkata Siva Manoj, Neethu Mohan, S. Sachin Kumar, and K. P. Soman<br/>
+                                            International Conference On Innovative Computing And Communication, pp. 521-530. Singapore: Springer Nature Singapore, 2024.<br/>
+<strong>Published:</strong> 27 September 2024</p>
+</div>
+<div class="publication-item animate-box" data-animate-effect="fadeInLeft">
+<h4><a href="https://doi.org/10.1109/ICICT60155.2024.10544665" target="_blank">Enhancing Product Categorization in E-commerce using NLP and Machine Learning</a></h4>
+<p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, V. Venkata Alluri Rohith, P. Sai Abhiram, M. Devi Siva Rama Saran, and Samya Rebecca<br/>
+                                            2024 International Conference on Inventive Computation Technologies (ICICT), pp. 1-6. IEEE, 2024.<br/>
+<strong>Published:</strong> 07 June 2024</p>
+</div>
+<div class="publication-item animate-box" data-animate-effect="fadeInRight">
+<h4><a href="https://doi.org/10.1007/978-3-031-56703-2_18" target="_blank">Transfer Learning Approach for Differentiating Parkinson's Syndromes Using Voice Recordings</a></h4>
+<p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, A. Venkata Siva Manoj, V. Poorna Muni Sasidhar Reddy, Aadharsh Aadhithya, and V. Sowmya<br/>
+                                            International Advanced Computing Conference, pp. 213-226. Cham: Springer Nature Switzerland, 2023.<br/>
+<strong>Published:</strong> 26 March 2024</p>
+</div>
+<div class="publication-item animate-box" data-animate-effect="fadeInLeft">
+<h4><a href="https://doi.org/10.1007/978-3-031-56703-2_32" target="_blank">Classification of Colorectal Cancer Tissue Utilizing Machine Learning Algorithms</a></h4>
+<p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, A. Venkata Siva Manoj, and V. Sowmya<br/>
+                                            International Advanced Computing Conference, pp. 397-409. Cham: Springer Nature Switzerland, 2023.<br/>
+<strong>Published:</strong> 26 March 2024</p>
+</div>
+<div class="publication-item animate-box" data-animate-effect="fadeInRight">
+<h4><a href="https://doi.org/10.1109/CONIT59222.2023.10205633" target="_blank">A Fast Iterative Filtering Method for Efficient Denoising of Phonocardiogram Signals</a></h4>
+<p class="pub-meta"><strong>Reddy, <strong>N. Sai Satwik</strong></strong>, V. Poorna Muni Saisdhar Reddy, Neethu Mohan, Sachin Kumar, and Soman KP<br/>
+                                            2023 3rd International Conference on Intelligent Technologies (CONIT), pp. 1-6. IEEE, 2023.<br/>
+<strong>Published:</strong> 07 August 2023</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Extra Curriculars Section -->
+<section class="colorlib-section" data-section="extracurriculars">
+<div class="colorlib-narrow-content">
+<div class="row">
+<div class="col-md-12">
+<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+<div class="col-md-12">
+<span class="heading-meta">Beyond Academics</span>
+<h2 class="colorlib-heading">Extra Curricular Activities</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="timeline-centered">
+<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+<div class="timeline-entry-inner">
+<div class="timeline-icon icon-style" style="background: #2c98f0;">
+<i class="fa-solid fa-chalkboard-teacher" style="color: white;"></i>
+</div>
+<div class="timeline-label">
+<h2>Workshop on LLMs<br/><span>October 2024</span></h2>
+<p>Organized a workshop on Large Language Models for freshmen at Anokha Tech Fest, Amrita University</p>
+</div>
+</div>
+</article>
+<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+<div class="timeline-entry-inner">
+<div class="timeline-icon icon-style" style="background: #ec5453;">
+<i class="fa-solid fa-lightbulb" style="color: white;"></i>
+</div>
+<div class="timeline-label">
+<h2>IEEE Idea-thon<br/><span>April 2024</span></h2>
+<p>Conducted idea-thon as IEEE student member at Amrita University</p>
+</div>
+</div>
+</article>
+<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+<div class="timeline-entry-inner">
+<div class="timeline-icon icon-style" style="background: #f9bf3f;">
+<i class="fa-solid fa-tree" style="color: white;"></i>
+</div>
+<div class="timeline-label">
+<h2>Nature Club Lead<br/><span>June 2022 – June 2024</span></h2>
+<p>Led sapling plantation event on World Environment Day for three consecutive years as the Lead of the Nature Club at Amrita University</p>
+</div>
+</div>
+</article>
+<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+<div class="timeline-entry-inner">
+<div class="timeline-icon color-none"></div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="colorlib-section" data-section="contact">
+<div class="colorlib-narrow-content">
+<div class="row">
+<div class="col-md-12">
+<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+<div class="col-md-12">
+<span class="heading-meta">Get in Touch</span>
+<h2 class="colorlib-heading">Contact</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-5">
+<div class="contact-info animate-box" data-animate-effect="fadeInLeft">
+<p><i class="fa-solid fa-envelope"></i> satwikreddy987@gmail.com</p>
+<p><i class="fa-solid fa-map-marker-alt"></i> Champaign, IL</p>
+</div>
+</div>
+<div class="col-md-7">
+<div class="row">
+<div class="col-md-12 animate-box" data-animate-effect="fadeInRight">
+<h3>Drop me a message</h3>
+<form action="mailto:satwikreddy987@gmail.com" enctype="text/plain" method="post">
+<div class="form-group">
+<input class="form-control" name="name" placeholder="Your Name" required="" type="text"/>
+</div>
+<div class="form-group">
+<input class="form-control" name="email" placeholder="Your Email" required="" type="email"/>
+</div>
+<div class="form-group">
+<input class="form-control" name="subject" placeholder="Subject" type="text"/>
+</div>
+<div class="form-group">
+<textarea class="form-control" cols="30" id="message" name="message" placeholder="Message" required="" rows="7"></textarea>
+</div>
+<div class="form-group">
+<input class="btn btn-primary btn-send-message" type="submit" value="Send Message"/>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
         // Rotating text animation
         $(document).ready(function() {
             const texts = ["a Data Scientist", "an ML Engineer", "a Data Engineer", "an AI Researcher", "a Data Analyst"];
@@ -1845,8 +2069,7 @@
             }
         });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <!-- Custom JS -->
 <script>
 (function(){
@@ -1894,6 +2117,5 @@
     });
 })();
 </script>
-
 </body>
 </html>
